@@ -1,0 +1,33 @@
+[
+    {
+        "year":"2020-2021",
+        "teaching":[
+            {
+                "title":"Teaching Assitant in PHY102AA - Physics-I",
+                "instructor":"Dr. Manas Khan, Dr. Supratik Banerjee"
+            }
+        ]
+    },
+    {
+        "year":"2020-2021",
+        "teaching":[
+            {
+                "title":"Teaching Assitant in PHY102AA - Physics-I",
+                "instructor":"Dr. Manas Khan, Dr. Supratik Banerjee"
+            }
+        ]
+    },
+    {
+        "year":"2021-2022",
+        "teaching":[
+            {
+                "title":"PHY205A - Fundamental Of Soft Matter",
+                "instructor":"Dr. Manas Khan"
+            },
+            {
+                "title":"PHY102AA-Physics-I",
+                "instructor":"Dr. Manas Khan, Dr. Supratik Banerjee"
+            }
+        ]
+    }
+]
