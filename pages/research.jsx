@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import * as fs from "node:fs/promises";
 import Head from "next/head";
+import Navbar from "../components/navbar";
+import Footer from "../components/footer";
 
 
 const Research = (props) => {
@@ -12,6 +14,7 @@ const Research = (props) => {
         <meta name="description" content="Research" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <Navbar/>
       <div className="flex flex-col px-6 md:w-4/5 my-12 m-auto">
         <div className="font-extrabold text-4xl text-neutral-900">Research</div>
         <div className="info md:my-20 my-10 md:w-1/2">
@@ -41,6 +44,7 @@ const Research = (props) => {
           </div>
         </div>
       </div>
+      <Footer/>
     </div>
   );
 };

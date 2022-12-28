@@ -1,5 +1,7 @@
 import React from "react";
 import Head from "next/head";
+import Navbar from "../components/navbar";
+import Footer from "../components/footer";
 
 const About = () => {
   return (
@@ -9,6 +11,7 @@ const About = () => {
         <meta name="description" content="About" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <Navbar/>
       <div className="flex flex-col px-6 md:w-4/5 my-12 m-auto">
         <div className="font-extrabold text-4xl text-neutral-900">About</div>
         <div className="info md:my-20 my-10 md:w-1/2">
@@ -134,6 +137,7 @@ const About = () => {
           </p>
         </div>
       </div>
+      <Footer/>
     </div>
   );
 };

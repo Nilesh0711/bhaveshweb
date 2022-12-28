@@ -2,6 +2,8 @@ import React from "react";
 import * as fs from "node:fs/promises";
 import Link from "next/link";
 import Head from "next/head";
+import Navbar from "../components/navbar";
+import Footer from "../components/footer";
 
 const Teaching = (props) => {
   const data = props.myData;
@@ -13,6 +15,7 @@ const Teaching = (props) => {
         <meta name="description" content="Teachings" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <Navbar/>
       <div className="flex flex-col px-6 md:w-4/5 my-12 m-auto">
         <div className="font-extrabold text-4xl text-neutral-900">
           My Teaching Activities
@@ -193,6 +196,7 @@ const Teaching = (props) => {
           })}
         </div>
       </div>
+      <Footer/>
     </div>
   );
 };
