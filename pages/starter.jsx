@@ -8,7 +8,7 @@ import "swiper/css";
 import "swiper/css/effect-fade";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import { EffectFade, Navigation, Pagination } from "swiper";
+import { EffectFade,Autoplay } from "swiper";
 
 const Starter = () => {
   return (
@@ -35,11 +35,11 @@ const SliderImage = () => {
         <Swiper
           spaceBetween={30}
           effect={"fade"}
-          navigation={true}
-          pagination={{
-            clickable: true,
+          autoplay={{
+            delay: 2500,
+            disableOnInteraction: false,
           }}
-          modules={[EffectFade, Navigation, Pagination]}
+          modules={[EffectFade, Autoplay]}
           className="mySwiper"
         >
           <SwiperSlide>
@@ -56,20 +56,20 @@ const SliderImage = () => {
           </SwiperSlide>
         </Swiper>
 
-        <div className="absolute flex-col items-center flex text-white w-full z-50">
+        <div className="absolute flex-col items-center flex text-white opacity-80 w-full z-50">
           <div className="text-2xl font-light mt-6">
-            PMRF Research Scholor, IIT Madras
+            PMRF RESEARCH SCHOLOR
           </div>
         </div>
 
-        <div className="absolute flex-col items-center flex text-white w-full z-50 h-1/2 justify-center">
-          <div className="text-6xl">Bhavesh Gupta</div>
+        <div className="absolute flex-col items-center flex text-white w-full z-10 h-full justify-center">
+          <div className="text-8xl">Bhavesh Gupta</div>
 
           <div className="mt-12">
             <Link href="/home">
               <button
                 type="button"
-                class="text-white hover:text-black border border-white hover:bg-white focus:ring-4 focus:outline-none focus:ring-blue-300 font-light text-lg px-5 py-2.5 text-center mr-2 mb-2"
+                className="text-white opacity-80 hover:text-black border border-white hover:bg-white focus:ring-4 focus:outline-none focus:ring-blue-300 font-light text-lg px-5 py-2.5 text-center mr-2 mb-2"
               >
                 VIEW WORK
               </button>
