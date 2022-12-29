@@ -13,7 +13,7 @@ const Navbar = () => {
             >
               <a href="https://quantum.iitm.ac.in">
                 CQuICC - Center for Quantum Information, Communication and
-                Computing Lab
+                Computing
               </a>
             </h3>
             <h3

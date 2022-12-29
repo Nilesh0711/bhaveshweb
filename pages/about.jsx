@@ -27,14 +27,14 @@ const About = () => {
               {" "}
               Department of Physics
             </a>{" "}
-            at the Indian Institute of Technology Kanpur. I work in the field of
+            at the Indian Institute of Technology Madras. I work in the field of
             <a
               target="_blank"
               className="italic text-blue-600 font-semibold"
               href="https://quantum.iitm.ac.in"
             >
               {" "}
-              Quantum Information and Computation Lab
+              Quantum Information and Computation
             </a>{" "}
             under the supervision of
             <a
