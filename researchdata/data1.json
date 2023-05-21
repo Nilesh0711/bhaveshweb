@@ -1,0 +1,14 @@
+[
+  {
+    "title": "Finding good quantum codes using the Cartan form",
+    "desc": "We study the crystallization process of square-shaped Brownian particles. These particles interact via hard-sphere interaction and crystallizes with various symmetries under osmotic compression. Both translational and orientational fluctuations need to be taken into account to understand the crystallization dynamics.",
+    "pics": "/img/research/data1.png", 
+    "figure": "Shows a two-dimensional colloidal assembly of square-shaped particles"
+  },
+  {
+    "title": "Simple approach to approximate quantum error correction based on the transpose channel",
+    "desc": "We study the mechanical response of tissue cells by stretching them with optical tweezers. Tether like structures are observed in our experiments. This is mostly dependent on the actin network of the cytoskeleton of cells, and how myosin helps in reorganization of the actin network.",
+    "pics": "/img/research/data2.png",
+    "figure": "Shows a tissue cell adhered to the cover glass and optical handles attached to the cell membrane"
+  }
+]
