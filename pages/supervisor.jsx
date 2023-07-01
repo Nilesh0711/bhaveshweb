@@ -18,7 +18,7 @@ const Supervisor = () => {
           <div className="font-extrabold text-xl md:text-4xl text-black">
             Supervisor
           </div>
-          <div className="info md:mt-20 mt-10">
+          <div className="info md:mt-20 mt-5">
             <div className="md:text-lg text-black md:w-1/2">
               I am being supervised by <strong>Dr. Prabha Mandayam</strong> and
               co-supervised by <strong>Dr. Chandrashekar Radhakrishnan</strong>{" "}
@@ -43,8 +43,8 @@ const Supervisor1 = () => {
   return (
     <>
       <section className="text-gray-600 body-font">
-        <div className="container mx-auto flex px-5 md:mt-24 mt-16 md:flex-row flex-col items-center">
-          <div className="md:w-1/3 md:h-1/3">
+        <div className="container mx-auto flex px-5 md:mt-24 mt-10 md:flex-row flex-col items-center">
+          <div className="md:w-1/4 md:h-1/3">
             <img
               className="object-cover object-center rounded-md w-72 h-72"
               alt="hero"
@@ -101,7 +101,7 @@ const Supervisor2 = () => {
     <>
       <section className="text-gray-600 body-font">
         <div className="container mx-auto flex px-5 md:mt-24 mt-16 md:flex-row flex-col items-center">
-          <div className="md:w-1/3 md:h-1/3">
+          <div className="md:w-1/4 md:h-1/3">
             <img
               className="object-cover object-center rounded-md w-72 h-72"
               alt="hero"

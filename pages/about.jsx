@@ -14,11 +14,11 @@ const About = () => {
       </Head>
       <Navbar about={"font-bold text-blue-500"} extra={""} />
       <main className="gradient-bg-services">
-        <div className="md:grid grid-cols-3 w-4/5 mx-auto">
-          <AboutInformation />
-          <section className="flex flex-col mx-auto">
+        <div className="md:grid grid-cols-3 md:w-4/5 mx-auto">
+          <section className="flex flex-col mx-auto md:order-last col-span-2 md:col-span-1">
             <PhotoImage />
           </section>
+          <AboutInformation className="md:col-span-2" />
         </div>
       </main>
 
@@ -26,7 +26,7 @@ const About = () => {
         <Ranking />
       </div>
 
-      <div className="pt-32 gradient-bg-footer">
+      <div className="pt-10 md:pt-32 gradient-bg-footer">
         <Footer />
       </div>
     </div>
@@ -37,10 +37,10 @@ const Ranking = () => {
   return (
     <>
       <div className="md:w-4/5 mx-auto pb-12 px-4">
-        <h2 className="relative group py-10 text-xl text-black md:text-3xl font-bold">
+        <h2 className="relative group py-5 md:py-10 text-xl text-black md:text-3xl font-bold">
           Education
         </h2>
-        <ul className="list-disc text-gray-700 list-inside text-sm md:text-lg space-y-4 md:mx-3">
+        <ul className="list-disc text-gray-700 list-inside text-base md:text-lg space-y-4 md:mx-3">
           <li>
             <strong>Ph.D. (Ongoing)</strong> - Indian Institute of Technology
             Madras, Chennai, India.
@@ -57,11 +57,11 @@ const Ranking = () => {
 
         <h2
           id="academic-achievements"
-          className="relative group py-10 font-bold text-xl md:text-3xl text-black"
+          className="relative group mt-5 py-5 md:py-10 font-bold text-xl md:text-3xl text-black"
         >
           Academic Achievement
         </h2>
-        <ul className="text-gray-700 list-disc list-inside space-y-4 md:mx-3 text-sm md:text-lg">
+        <ul className="text-gray-700 list-disc list-inside space-y-4 md:mx-3 text-base md:text-lg">
           <li>
             <strong>Prime Minister&rsquo;s Research Fellowship</strong> - 2022
           </li>
@@ -91,11 +91,11 @@ const Ranking = () => {
 const AboutInformation = () => {
   return (
     <>
-      <section className="flex flex-col md:px-6 md:m-auto col-span-2 pt-12">
+      <section className="flex flex-col md:m-auto col-span-2 pt-5 md:pt-12 px-5">
         <div className="font-extrabold text-2xl md:text-4xl text-black">
           About
         </div>
-        <div className="info md:my-20 my-5 md:text-left text-justify text-gray-600 text-lg">
+        <div className="info md:my-20 my-5 md:text-left text-justify text-gray-600 md:text-lg text-base">
           <div>Hi, I am Bhavesh. Again, welcome to my website.</div>
           <br />
           <div>
@@ -140,7 +140,7 @@ const AboutInformation = () => {
             intermediate-scale quantum (NISQ) era.
           </div>
           <br />
-          <div className="text-lg">
+          <div className="md:text-lg text-base">
             Besides my research, I also do swimming and gym, though I do not
             find much time. Sometimes, I also play table-tennis and watch
             geopolitics.
@@ -156,7 +156,7 @@ const AboutInformation = () => {
 const PhotoImage = () => {
   return (
     <>
-      <header className="flex flex-col items-center mx-auto justify-center mt-10 mb-20 md:my-20">
+      <header className="flex flex-col items-center mx-auto justify-center mt-10 mb-10 md:mb-20 md:my-20">
         <img
           className="mb-2 rounded-md w-4/5 h-4/5"
           alt="Author"
@@ -296,7 +296,7 @@ const Motivation = () => {
       <h2 className="relative group my-5 mt-10 md:mt-10 md:my-10 text-xl md:text-3xl font-bold text-black">
         Motivation for pursuing a Ph.D. in Quantum Information and Computing
       </h2>
-      <p className="text-justify text-gray-600 text-lg">
+      <p className="text-justify text-gray-600 md:text-lg text-base">
         I came across quantum mechanics and quantum statistical mechanics as one
         of my core courses and advanced quantum mechanics and quantum field
         theory as my professional electives during my undergrad and postgrad.

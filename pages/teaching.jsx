@@ -26,7 +26,9 @@ const Teaching = (props) => {
               PMRF TA work for NPTEL
             </div>
             <section>
-              <div className="my-4 text-md font-semibold text-violet-900">2022-2023</div>
+              <div className="my-4 text-md font-semibold text-violet-900">
+                2022-2023
+              </div>
               <p className="my-2 font-sans text-lg text-gray-600">
                 I have applied for PMRF teaching assistant work for NPTEL Course
                 January 2023. The five given priority courses are of mathematics
@@ -40,18 +42,18 @@ const Teaching = (props) => {
                 Institute Teaching Assistantship
               </div>
 
-              {data.map((e) => {
+              {data.map((e, index) => {
                 return (
-                  <section className="text-base">
+                  <section key={index} className="text-base">
                     <h4
                       id="2020-2021"
                       className="relative group mt-6 font-semibold text-violet-900"
                     >
                       {e.year}{" "}
                     </h4>
-                    {e.teaching.map((element) => {
+                    {e.teaching.map((element, index) => {
                       return (
-                        <ul className="list-disc list-inside space-y-4 md:p-3 mt-6 text-sm md:text-lg text-gray-600">
+                        <ul key={index} className="list-disc list-inside space-y-4 md:p-3 mt-6 text-sm md:text-lg text-gray-600">
                           <li>{element.title}</li>
                         </ul>
                       );
@@ -63,9 +65,9 @@ const Teaching = (props) => {
           </div>
         </div>
       </main>
-  
+
       <div className="gradient-bg-transactions">
-        <YoutubeAndDrive/>
+        <YoutubeAndDrive />
       </div>
 
       <div className="gradient-bg-footer">

@@ -69,7 +69,7 @@ const SliderImage = () => {
             <Link target="_blank" href="/home">
               <button
                 type="button"
-                className="text-white opacity-80 hover:text-white border border-white hover:bg-white focus:ring-4 focus:outline-none focus:ring-blue-300 font-light text-lg px-5 py-2.5 text-center mr-2 mb-2"
+                className="text-white opacity-80 hover:text-white hover:text-black border border-white hover:bg-white focus:ring-4 focus:outline-none focus:ring-blue-300 font-light text-lg px-5 py-2.5 text-center mr-2 mb-2"
               >
                 VIEW WORK
               </button>

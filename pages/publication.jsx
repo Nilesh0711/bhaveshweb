@@ -30,7 +30,7 @@ const Publications = (props) => {
       </main>
       <section className="gradient-bg-transactions">
         <div className="px-6 md:w-4/5 m-auto">
-          <div className="info py-10 md:w-1/2">
+          <div className="info py-5 md:py-10 md:w-1/2">
             <div className="data mt-5">
               <div className="font-bold text-lg md:text-2xl text-black">
                 Work in progress

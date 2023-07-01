@@ -43,11 +43,21 @@ const Research = (props) => {
             Research
           </div>
           <Motivation />
-          <hr className="mt-24 mx-auto w-48 h-1 bg-gray-900 rounded border-0"></hr>
+          <hr className="mt-16 md:mt-24 mx-auto w-48 h-1 bg-gray-900 rounded border-0"></hr>
         </div>
         <ProgressReport showAlert={showAlert} />
       </main>
+          <WorkList/>
+      <div className="pt-32 gradient-bg-footer">
+        <Footer />
+      </div>
+    </div>
+  );
+};
 
+const WorkList = () => {
+  return (
+    <>
       <section>
         <div className="md:w-4/5 mx-auto px-4">
           <div className="info pt-20 md:w-1/2 text-black">
@@ -56,7 +66,7 @@ const Research = (props) => {
             </div>
             <div className="my-5">
               I am currently reading the following topics.
-              <ul className="list-disc list-inside space-y-4 my-6 md:mx-3 text-gray-600">
+              <ul className="list-disc text-gray-700 list-inside text-base md:text-lg space-y-4 md:mx-3 mt-12">
                 <li>Operator QEC, Entanglement assisted QEC, Holonomic QEC</li>
                 <li>Isometric extension, Block encoding, Petz recovery</li>
                 <li>Bosonic Codes and Bosonic systems</li>
@@ -73,7 +83,7 @@ const Research = (props) => {
             </div>
             <div className="my-5">
               I am currently reading the following books.
-              <ul className="list-disc list-inside space-y-4 my-6 md:mx-3 text-gray-600">
+              <ul className="list-disc text-gray-700 list-inside text-base md:text-lg space-y-4 md:mx-3 mt-12">
                 <li>QCQI by Neilsen and Chuang</li>
                 <li>QEC by Lidar and burn</li>
                 <li>QI by Mark Wilde</li>
@@ -115,16 +125,12 @@ const Research = (props) => {
         })}
       </div> */}
 
-        <hr className="mt-24 mx-auto w-48 h-1 bg-gray-900 rounded border-0"></hr>
+        <hr className="mt-16 md:mt-24 mx-auto w-48 h-1 bg-gray-900 rounded border-0"></hr>
 
         <WorshopAttendent />
         <ConferenceAttendent />
       </section>
-
-      <div className="pt-32 gradient-bg-footer">
-        <Footer />
-      </div>
-    </div>
+    </>
   );
 };
 
@@ -242,7 +248,7 @@ const ConferenceAttendent = () => {
 const ProgressReport = ({ showAlert }) => {
   return (
     <>
-      <div className="flex justify-center flex-wrap mt-28">
+      <div className="flex justify-center flex-wrap mt-10 md:mt-28">
         <Popover
           animate={{
             mount: { scale: 1, y: 0 },
@@ -264,7 +270,6 @@ const ProgressReport = ({ showAlert }) => {
             <div className="grid grid-cols-5 grid-row-5 gap-y-5 gap-x-10">
               <SemesterButton
                 title={"Semester 1"}
-                class="bg-green-700 hover:bg-green-800 focus:ring-green-300"
                 link={
                   "https://drive.google.com/file/d/1ZfaqVmHknP_1zrpaMfVodQ0dhsV5i2-_/view"
                 }
@@ -272,55 +277,48 @@ const ProgressReport = ({ showAlert }) => {
               />
               <SemesterButton
                 title={"Semester 2"}
-                class="bg-red-700 hover:bg-red-800 focus:ring-red-300"
-                link={""}
+                link={
+                  "https://drive.google.com/file/d/1PNwe_XYHqyNQkHMaJ2oN70dP1M0fOG4L/view?usp=share_link"
+                }
                 showAlert={showAlert}
               />
               <SemesterButton
                 title={"Semester 3"}
-                class="bg-red-700 hover:bg-red-800 focus:ring-red-300"
                 link={""}
                 showAlert={showAlert}
               />
               <SemesterButton
                 title={"Semester 4"}
-                class="bg-red-700 hover:bg-red-800 focus:ring-red-300"
                 link={""}
                 showAlert={showAlert}
               />
               <SemesterButton
                 title={"Semester 5"}
-                class="bg-red-700 hover:bg-red-800 focus:ring-red-300"
                 link={""}
                 showAlert={showAlert}
               />
               <SemesterButton
                 title={"Semester 6"}
-                class="bg-red-700 hover:bg-red-800 focus:ring-red-300"
                 link={""}
                 showAlert={showAlert}
               />
               <SemesterButton
                 title={"Semester 7"}
-                class="bg-red-700 hover:bg-red-800 focus:ring-red-300"
                 link={""}
                 showAlert={showAlert}
               />
               <SemesterButton
                 title={"Semester 8"}
-                class="bg-red-700 hover:bg-red-800 focus:ring-red-300"
                 link={""}
                 showAlert={showAlert}
               />
               <SemesterButton
                 title={"Semester 9"}
-                class="bg-red-700 hover:bg-red-800 focus:ring-red-300"
                 link={""}
                 showAlert={showAlert}
               />
               <SemesterButton
                 title={"Semester 10"}
-                class="bg-red-700 hover:bg-red-800 focus:ring-red-300"
                 link={""}
                 showAlert={showAlert}
               />
@@ -335,10 +333,13 @@ const ProgressReport = ({ showAlert }) => {
 const SemesterButton = (props) => {
   let link = props.link;
   let flag = true;
+  let done = "";
   if (link.length > 0) {
     flag = true;
+    done = "bg-green-700 hover:bg-green-800 focus:ring-green-300";
   } else {
     flag = false;
+    done = "bg-red-700 hover:bg-red-800 focus:ring-red-300";
   }
   let title = props.title.split(" ");
 
@@ -355,7 +356,7 @@ const SemesterButton = (props) => {
         <Link
           target="_blank"
           href={link}
-          className={`${props.class} focus:outline-none focus:ring-4 text-white font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2 flex items-center justify-center`}
+          className={`${done} focus:outline-none focus:ring-4 text-white font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2 flex items-center justify-center`}
         >
           {title[1]}
         </Link>
@@ -365,7 +366,7 @@ const SemesterButton = (props) => {
             handleClick(e);
           }}
           type="submit"
-          className={`${props.class} focus:outline-none focus:ring-4 text-white font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2 flex items-center justify-center`}
+          className={`${done} focus:outline-none focus:ring-4 text-white font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2 flex items-center justify-center`}
         >
           {title[1]}
         </button>
@@ -377,7 +378,7 @@ const SemesterButton = (props) => {
 const Motivation = () => {
   return (
     <>
-      <div className="font-bold text-lg md:text-2xl text-black text-center my-6 mt-12">
+      <div className="font-bold text-xl md:text-3xl text-black text-center my-6 mt-12">
         Research Interest
       </div>
       <div className="md:my-6 text-justify text-gray-600 md:grid grid-cols-2 gap-x-10">

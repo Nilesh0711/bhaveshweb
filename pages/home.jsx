@@ -30,7 +30,7 @@ const Welcome = () => {
     <>
       <section className="flex flex-col text-center md:w-3/5 items-center justify-center mx-auto px-4">
         <div className="pt-12 text-xl md:text-2xl font-semibold text-gray-900">Welcome to my homepage</div>
-        <div className="pt-6 text-sm md:text-lg text-gray-600">
+        <div className="pt-6 text-base md:text-lg text-gray-600">
           I am Bhavesh Gupta, a research scholar in the Physics Department at
           IIT Madras.
           <br /> To know more, visit my
