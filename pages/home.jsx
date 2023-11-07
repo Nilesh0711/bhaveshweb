@@ -34,11 +34,11 @@ const Welcome = () => {
           I am Bhavesh Gupta, a research scholar in the Physics Department at
           IIT Madras.
           <br /> To know more, visit my
-          <Link className="italic text-blue-600 font-semibold hover:bg-blue-600 hover:text-white hover:p-1 hover:m-1  hover:rounded-md" href="./about">
+          <Link className="italic text-blue-600 font-semibold "href="./about">
           {" "}about{" "}
           </Link>
           page for more information. To get in touch, visit the
-          <Link className="italic text-blue-600 font-semibold hover:bg-blue-600 hover:text-white hover:p-1 hover:m-1 hover:rounded-md" href="./contact">
+          <Link className="italic text-blue-600 font-semibold "href="./contact">
           {" "}contact{" "}
           </Link>
         </div>

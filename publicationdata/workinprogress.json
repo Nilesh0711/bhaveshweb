@@ -1,6 +1,22 @@
 [
-    {
-        "text":"Literature review and course work",
-        "key":"1"
-    }
+  {
+    "title": "Noise-Adapted Quantum Error Correction to Adiabatic Quantum Computation",
+    "description": "<div> Active error correction for Pauli noise and Amplitude damping (non-Pauli error) for 2-local universal adiabatic quantum computation. Renormalising the system-bath coupling results error suppression. But, coupling <span className='text-red-600'>cannot be eliminated completely</span> without using an infinite amount of energy. Ex: DD pulses applied at an infinitely <span className='underline'>high frequency</span> or an infinite <span className='underline'>strong EGP</span> Hamiltonian. Since, our <span className='text-red-600'>resources are finite.</span> Physical error will accumulate over long time scales eventually causing <span className='underline'>logical errors!</span> We can use classical post-processing, but as errors <span className='text-red-600'>accumulate more</span>, it results in <span className='text-red-600'>Computation fails!</span></div>",
+    "image": "1Bq9W2oOPDNhkkQ0Mlye6ZPGvW-sOX-Ok"
+  },
+  {
+    "title": "Quantum adiabatic factoring algorithm design using reinforcement learning",
+    "description": "<div> Approach is generically applicable to a class of problems with solution hard-to-find but easy-to-verify, e.g., factoring a NP-complete problem. </div>",
+    "image": ""
+  },
+  {
+    "title": "Noise Spectroscopy of IBM Superconducting Qubits",
+    "description": "",
+    "image": "1Q1Dmhfj_4bS8DgxzZDQNvHw4NAngKs0-"
+  },
+  {
+    "title": "Finding near Optimal Dynamical Decoupling protocol using Machine Learning to suppress Noises in IBM Qubits ",
+    "description": "<div> Robust isolation of a qubit from unwanted environmental noise is a critical factor in technologies such as quantum computers. Understanding the spectrum of noise acting on a qubit can yield valuable information about its environment and crucially underpins the optimization of dynamical decoupling protocols to mitigate such noise. To address this challenge we use deep-learning algorithms and demonstrate a neural-network-based methodology that extracts the noise spectrum associated with any qubit surrounded by an arbitrary bath. In practice, the experimental noise spectrum varies significantly between different qubits in ways that are non-trivial to either predict or, indeed, to extract from the most common measurements accurately. As a result, it is difficult to predict a priori which of the several possible dynamical decoupling protocols would provide optimal suppression of decoherence.</div>",
+    "image": ""
+  }
 ]

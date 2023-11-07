@@ -1,10 +1,16 @@
-import React from "react";
 import Head from "next/head";
 import Link from "next/link";
+
 import Navbar from "../components/navbar";
 import Footer from "../components/footer";
+import * as fs from "node:fs/promises";
+import ImageLoader from "../components/imageLoader";
 
-const About = () => {
+import React from "react";
+
+const About = (props) => {
+  const responsibilityData = props.responsibilityData;
+
   return (
     <div>
       <Head>
@@ -24,6 +30,10 @@ const About = () => {
 
       <div className="gradient-bg-transactions">
         <Ranking />
+      </div>
+
+      <div>
+        <PositionResponsibility responsibilityData={responsibilityData} />
       </div>
 
       <div className="pt-10 md:pt-32 gradient-bg-footer">
@@ -88,6 +98,40 @@ const Ranking = () => {
   );
 };
 
+const PositionResponsibility = ({ responsibilityData }) => {
+  return (
+    <section className="md:w-4/5 mx-auto pb-12 px-4">
+      <div className="relative group py-5 md:py-10 text-xl text-black md:text-3xl font-bold">
+        Position of Responsibility
+      </div>
+
+      <div className="">
+        {responsibilityData.map((e, index) => {
+          let link = e.link.length != 0 ? true : false;
+          return (
+            <section key={index} className="text-base">
+              <ul className="list-disc text-gray-700 text-base md:text-lg space-y-4 md:mx-3">
+                <li>
+                  <span className="font-bold text-black">{e.head} </span>
+                  <span className="text-md">{e.content}</span>
+                  {link != "" && (
+                    <span>
+                      <Link href={e.link}>
+                        {" "}
+                        <FaShare className="inline pointer mb-1 ml-1 text-blue-500" />
+                      </Link>
+                    </span>
+                  )}
+                </li>
+              </ul>
+            </section>
+          );
+        })}
+      </div>
+    </section>
+  );
+};
+
 const AboutInformation = () => {
   return (
     <>
@@ -99,10 +143,10 @@ const AboutInformation = () => {
           <div>Hi, I am Bhavesh. Again, welcome to my website.</div>
           <br />
           <div>
-            I am a first-year PhD in the
+            I am a second-year PhD in the
             <a
               target="_blank"
-              className="italic text-blue-600 font-semibold hover:bg-blue-600 hover:text-white hover:px-1 hover:py-1 hover:ml-1 hover:rounded-md"
+              className="italic text-blue-600 font-semibold"
               href="https://physics.iitm.ac.in"
             >
               {" "}
@@ -111,7 +155,7 @@ const AboutInformation = () => {
             at the Indian Institute of Technology Madras. I work in the field of
             <a
               target="_blank"
-              className="italic text-blue-600 font-semibold hover:bg-blue-600 hover:text-white hover:px-1 hover:py-1 hover:ml-1 hover:rounded-md"
+              className="italic text-blue-600 font-semibold"
               href="https://quantum.iitm.ac.in"
             >
               {" "}
@@ -120,20 +164,11 @@ const AboutInformation = () => {
             under the supervision of
             <a
               target="_blank"
-              className="italic text-blue-600 font-semibold hover:bg-blue-600 hover:text-white hover:px-1 hover:py-1 hover:ml-1 hover:rounded-md"
+              className="italic text-blue-600 font-semibold"
               href="https://physics.iitm.ac.in/~prabhamd/index.html"
             >
               {" "}
-              Dr. Prabha Mandayam
-            </a>{" "}
-            and co-supervised by
-            <a
-              target="_blank"
-              className="italic text-blue-600 font-semibold hover:bg-blue-600 hover:text-white hover:px-1 hover:py-1 hover:ml-1 hover:rounded-md"
-              href="https://sites.google.com/view/chandrashekar/home"
-            >
-              {" "}
-              Dr. Chandrashekar Radhakrishnan.
+              Dr. Prabha Mandayam.
             </a>{" "}
             My current research aims to Quantum key Distribution (QKD), Quantum
             Error Correction (QEC) and Quantum Fault Tolerance in the Noisy
@@ -157,10 +192,15 @@ const PhotoImage = () => {
   return (
     <>
       <header className="flex flex-col items-center mx-auto justify-center mt-10 mb-10 md:mb-20 md:my-20">
-        <img
-          className="mb-2 rounded-md w-4/5 h-4/5"
-          alt="Author"
-          src="https://drive.google.com/uc?export=view&id=1jG6V7tSpO2U3Xq9G5HsLKiuO8i1Voxmr"
+        <ImageLoader
+          mainImageSrc={
+            "https://drive.google.com/uc?export=view&id=1jG6V7tSpO2U3Xq9G5HsLKiuO8i1Voxmr"
+          }
+          altImageSrc={"/img/loading.jpg"}
+          altText={"image"}
+          classValue={
+            "object-cover object-center mb-2 rounded-md w-4/5 h-[550px]"
+          }
         />
         <article className="text-center">
           <h1 className="text-4xl my-4 text-black font-extrabold ">
@@ -269,17 +309,14 @@ const PhotoImage = () => {
           To know more about me. You can download my
           <Link
             target="_blank"
-            className="italic text-blue-600 font-semibold hover:bg-blue-600 hover:text-white hover:p-1 hover:ml-1 hover:rounded-md"
-            href="https://drive.google.com/file/d/1YEczwIuxhio5Sitjst4zuADWr-M_piTr/view?usp=share_link"
+            className="italic text-blue-600 font-semibold"
+            href="https://drive.google.com/file/d/1K3BbIhvtgCbSUrBbffdC6eP2edRcRVjY/view?usp=share_link"
           >
             {" "}
             CV here
           </Link>
           . To contact me, visit the
-          <Link
-            className="italic text-blue-600 font-semibold hover:bg-blue-600 hover:text-white hover:p-1 hover:ml-1 hover:rounded-md"
-            href="/contact"
-          >
+          <Link className="italic text-blue-600 font-semibold" href="/contact">
             {" "}
             contact
           </Link>{" "}
@@ -326,5 +363,18 @@ const Motivation = () => {
     </>
   );
 };
+
+export async function getStaticProps() {
+  let responsibilityData = await fs.readFile(
+    "aboutdata/position_responsibility.json",
+    "utf-8"
+  );
+
+  responsibilityData = JSON.parse(responsibilityData);
+
+  return {
+    props: { responsibilityData },
+  };
+}
 
 export default About;

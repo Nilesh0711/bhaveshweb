@@ -1,8 +1,9 @@
 import React, { useState, useEffect, Fragment } from "react";
-import * as fs from "node:fs/promises";
 import Head from "next/head";
 import Navbar from "../components/navbar";
 import Footer from "../components/footer";
+import ImageLoader from "../components/imageLoader";
+
 import {
   Popover,
   PopoverHandler,
@@ -15,13 +16,12 @@ import { CgNotes } from "react-icons/cg";
 import Link from "next/link";
 
 const Research = (props) => {
-  const [data, setdata] = useState(props.myData);
   const [alert, setAlert] = useState(false);
   const showAlert = () => {
     setAlert(true);
     setTimeout(() => {
       setAlert(false);
-    }, 2000);
+    }, 2500);
   };
   return (
     <div>
@@ -43,15 +43,45 @@ const Research = (props) => {
             Research
           </div>
           <Motivation />
-          <hr className="mt-16 md:mt-24 mx-auto w-48 h-1 bg-gray-900 rounded border-0"></hr>
+          <LoadImage />
+          <hr className="mt-16 mx-auto w-48 h-1 bg-gray-900 rounded border-0"></hr>
         </div>
         <ProgressReport showAlert={showAlert} />
       </main>
-          <WorkList/>
+      <WorkList />
       <div className="pt-32 gradient-bg-footer">
         <Footer />
       </div>
     </div>
+  );
+};
+
+const LoadImage = () => {
+  return (
+    <>
+      <div className="m-auto">
+        <ImageLoader
+          mainImageSrc={
+            "https://drive.google.com/uc?export=view&id=1sg1_jMC-tumiXq2ug83veDItisqVTI05"
+          }
+          altImageSrc={"/img/loading.jpg"}
+          altText={"image"}
+          classValue={
+            "object-cover object-center w-full h-full my-2"
+          }
+        />
+        <ImageLoader
+          mainImageSrc={
+            "https://drive.google.com/uc?export=view&id=10sct43Bv2QdRAouOoUXaNMmAX2Sq_nEp"
+          }
+          altImageSrc={"/img/loading.jpg"}
+          altText={"image"}
+          classValue={
+            "object-cover object-center w-full h-full my-2"
+          }
+        />
+      </div>
+    </>
   );
 };
 
@@ -248,7 +278,7 @@ const ConferenceAttendent = () => {
 const ProgressReport = ({ showAlert }) => {
   return (
     <>
-      <div className="flex justify-center flex-wrap mt-10 md:mt-28">
+      <div className="flex justify-center flex-wrap mt-10 md:mt-12">
         <Popover
           animate={{
             mount: { scale: 1, y: 0 },
@@ -442,13 +472,5 @@ const Motivation = () => {
     </>
   );
 };
-
-export async function getStaticProps() {
-  let myData = await fs.readFile("researchdata/data1.json", "utf-8");
-  myData = JSON.parse(myData);
-  return {
-    props: { myData },
-  };
-}
 
 export default Research;
