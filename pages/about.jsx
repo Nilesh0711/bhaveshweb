@@ -366,7 +366,7 @@ const Motivation = () => {
 
 export async function getStaticProps() {
   let responsibilityData = await fs.readFile(
-    "aboutdata/position_responsibility.json",
+    "data/about/position_responsibility.json",
     "utf-8"
   );
 

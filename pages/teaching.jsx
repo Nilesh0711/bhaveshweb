@@ -46,7 +46,8 @@ const Teaching = (props) => {
                           {link != "" && (
                             <span>
                               <Link href={e.link}>
-                                {" "} <FaFilePdf className="inline pointer mb-1 ml-1 text-blue-500" />
+                                {" "}
+                                <FaFilePdf className="inline pointer mb-1 ml-1 text-blue-500" />
                               </Link>
                             </span>
                           )}
@@ -76,7 +77,8 @@ const Teaching = (props) => {
                           {link != "" && (
                             <span>
                               <Link href={e.link}>
-                                {" "} <FaFilePdf className="inline pointer mb-1 ml-1 text-blue-500" />
+                                {" "}
+                                <FaFilePdf className="inline pointer mb-1 ml-1 text-blue-500" />
                               </Link>
                             </span>
                           )}
@@ -116,7 +118,6 @@ const Teaching = (props) => {
                 );
               })}
             </section>
-            
           </div>
         </div>
       </main>
@@ -164,7 +165,8 @@ const YoutubeAndDrive = () => {
               href="https://www.youtube.com/@bhaveshgupta2760"
               className="hover:bg-red-600 text-red-600 hover:text-white p-2 text-sm md:text-base italic rounded-md group"
             >
-              Youtube <TbExternalLink className="inline mb-1 ml-1 text-red-600 group-hover:text-white"/>
+              Youtube{" "}
+              <TbExternalLink className="inline mb-1 ml-1 text-red-600 group-hover:text-white" />
             </Link>
           </div>
         </section>
@@ -197,7 +199,8 @@ const YoutubeAndDrive = () => {
               href="https://drive.google.com/drive/folders/1TFuXh8dulq5Tb5U-VaXw32W9AwTXhCD8?usp=share_link"
               className="hover:bg-blue-600 text-blue-600 hover:text-white p-2 italic text-sm md:text-base rounded-md group"
             >
-              Drive <TbExternalLink className="inline mb-1 ml-1 text-blue-600 group-hover:text-white"/>
+              Drive{" "}
+              <TbExternalLink className="inline mb-1 ml-1 text-blue-600 group-hover:text-white" />
             </Link>
           </div>
         </section>
@@ -208,15 +211,15 @@ const YoutubeAndDrive = () => {
 
 export async function getStaticProps() {
   let instituteData = await fs.readFile(
-    "teachingdata/institue_teaching.json",
+    "data/teaching/institue_teaching.json",
     "utf-8"
   );
   let pmrfTaData = await fs.readFile(
-    "teachingdata/pmrf_teaching.json",
+    "data/teaching/pmrf_teaching.json",
     "utf-8"
   );
   let responsibilityData = await fs.readFile(
-    "teachingdata/teaching_responsibility.json",
+    "data/teaching/teaching_responsibility.json",
     "utf-8"
   );
 

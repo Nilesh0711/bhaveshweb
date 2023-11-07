@@ -99,7 +99,7 @@ const Publications = (props) => {
 
 export async function getStaticProps() {
   let workProgessData = await fs.readFile(
-    "publicationdata/workinprogress.json",
+    "data/publication/workinprogress.json",
     "utf-8"
   );
   workProgessData = JSON.parse(workProgessData);

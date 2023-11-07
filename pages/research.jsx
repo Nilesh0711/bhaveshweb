@@ -15,7 +15,7 @@ import {
 import { CgNotes } from "react-icons/cg";
 import Link from "next/link";
 
-const Research = (props) => {
+const Research = () => {
   const [alert, setAlert] = useState(false);
   const showAlert = () => {
     setAlert(true);

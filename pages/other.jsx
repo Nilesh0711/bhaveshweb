@@ -2,8 +2,8 @@ import React from "react";
 import Head from "next/head";
 import Navbar from "../components/navbar";
 import Footer from "../components/footer";
-import Link from "next/link";
 import * as fs from "node:fs/promises";
+import ImageLoader from "../components/imageLoader";
 
 const Other = (props) => {
   const gallery1Data = props.gallery1Data;
@@ -69,53 +69,65 @@ const Gallery1 = ({ gallery1Data }) => {
             <div className="flex flex-wrap md:-m-2 -m-1">
               <div className="flex flex-wrap w-1/2">
                 <div className="md:p-2 p-1 w-1/2">
-                  <img
-                    alt="gallery"
-                    loading="lazy"
-                    className="w-full object-cover h-full object-center block"
-                    src={`https://drive.google.com/uc?export=view&id=${gallery1Data[0].img1}`}
+                  <ImageLoader
+                    mainImageSrc={`https://drive.google.com/uc?export=view&id=${gallery1Data[0].img1}`}
+                    altImageSrc={"/img/loading.jpg"}
+                    altText={"image"}
+                    classValue={
+                      "w-full object-cover h-full object-center block"
+                    }
                   />
                 </div>
                 <div className="md:p-2 p-1 w-1/2">
-                  <img
-                    alt="gallery"
-                    loading="lazy"
-                    className="w-full object-cover h-full object-center block"
-                    src={`https://drive.google.com/uc?export=view&id=${gallery1Data[0].img2}`}
+                  <ImageLoader
+                    mainImageSrc={`https://drive.google.com/uc?export=view&id=${gallery1Data[0].img2}`}
+                    altImageSrc={"/img/loading.jpg"}
+                    altText={"image"}
+                    classValue={
+                      "w-full object-cover h-full object-center block"
+                    }
                   />
                 </div>
                 <div className="md:p-2 p-1 w-full">
-                  <img
-                    alt="gallery"
-                    loading="lazy"
-                    className="w-full h-full object-cover object-center block"
-                    src={`https://drive.google.com/uc?export=view&id=${gallery1Data[0].img3}`}
+                  <ImageLoader
+                    mainImageSrc={`https://drive.google.com/uc?export=view&id=${gallery1Data[0].img3}`}
+                    altImageSrc={"/img/loading.jpg"}
+                    altText={"image"}
+                    classValue={
+                      "w-full object-cover h-full object-center block"
+                    }
                   />
                 </div>
               </div>
               <div className="flex flex-wrap w-1/2">
                 <div className="md:p-2 p-1 w-full">
-                  <img
-                    alt="gallery"
-                    loading="lazy"
-                    className="w-full h-full object-cover object-center block"
-                    src={`https://drive.google.com/uc?export=view&id=${gallery1Data[0].img4}`}
+                  <ImageLoader
+                    mainImageSrc={`https://drive.google.com/uc?export=view&id=${gallery1Data[0].img4}`}
+                    altImageSrc={"/img/loading.jpg"}
+                    altText={"image"}
+                    classValue={
+                      "w-full object-cover h-full object-center block"
+                    }
                   />
                 </div>
                 <div className="md:p-2 p-1 w-1/2">
-                  <img
-                    alt="gallery"
-                    loading="lazy"
-                    className="w-full object-cover h-full object-center block"
-                    src={`https://drive.google.com/uc?export=view&id=${gallery1Data[0].img5}`}
+                  <ImageLoader
+                    mainImageSrc={`https://drive.google.com/uc?export=view&id=${gallery1Data[0].img5}`}
+                    altImageSrc={"/img/loading.jpg"}
+                    altText={"image"}
+                    classValue={
+                      "w-full object-cover h-full object-center block"
+                    }
                   />
                 </div>
                 <div className="md:p-2 p-1 w-1/2">
-                  <img
-                    alt="gallery"
-                    loading="lazy"
-                    className="w-full object-cover h-full object-center block"
-                    src={`https://drive.google.com/uc?export=view&id=${gallery1Data[0].img6}`}
+                  <ImageLoader
+                    mainImageSrc={`https://drive.google.com/uc?export=view&id=${gallery1Data[0].img6}`}
+                    altImageSrc={"/img/loading.jpg"}
+                    altText={"image"}
+                    classValue={
+                      "w-full object-cover h-full object-center block"
+                    }
                   />
                 </div>
               </div>
@@ -151,53 +163,65 @@ const Gallery2 = ({ gallery2Data }) => {
             <div className="flex flex-wrap md:-m-2 -m-1">
               <div className="flex flex-wrap w-1/2">
                 <div className="md:p-2 p-1 w-1/2">
-                  <img
-                    alt="gallery"
-                    loading="lazy"
-                    className="w-full object-cover h-full object-center block"
-                    src={`https://drive.google.com/uc?export=view&id=${gallery2Data[0].img1}`}
+                  <ImageLoader
+                    mainImageSrc={`https://drive.google.com/uc?export=view&id=${gallery2Data[0].img1}`}
+                    altImageSrc={"/img/loading.jpg"}
+                    altText={"image"}
+                    classValue={
+                      "w-full object-cover h-full object-center block"
+                    }
                   />
                 </div>
                 <div className="md:p-2 p-1 w-1/2">
-                  <img
-                    alt="gallery"
-                    loading="lazy"
-                    className="w-full object-cover h-full object-center block"
-                    src={`https://drive.google.com/uc?export=view&id=${gallery2Data[0].img2}`}
+                  <ImageLoader
+                    mainImageSrc={`https://drive.google.com/uc?export=view&id=${gallery2Data[0].img2}`}
+                    altImageSrc={"/img/loading.jpg"}
+                    altText={"image"}
+                    classValue={
+                      "w-full object-cover h-full object-center block"
+                    }
                   />
                 </div>
                 <div className="md:p-2 p-1 w-full">
-                  <img
-                    alt="gallery"
-                    loading="lazy"
-                    className="w-full h-full object-cover object-center block"
-                    src={`https://drive.google.com/uc?export=view&id=${gallery2Data[0].img3}`}
+                  <ImageLoader
+                    mainImageSrc={`https://drive.google.com/uc?export=view&id=${gallery2Data[0].img3}`}
+                    altImageSrc={"/img/loading.jpg"}
+                    altText={"image"}
+                    classValue={
+                      "w-full object-cover h-full object-center block"
+                    }
                   />
                 </div>
               </div>
               <div className="flex flex-wrap w-1/2">
                 <div className="md:p-2 p-1 w-full">
-                  <img
-                    alt="gallery"
-                    loading="lazy"
-                    className="w-full h-full object-cover object-center block"
-                    src={`https://drive.google.com/uc?export=view&id=${gallery2Data[0].img4}`}
+                  <ImageLoader
+                    mainImageSrc={`https://drive.google.com/uc?export=view&id=${gallery2Data[0].img4}`}
+                    altImageSrc={"/img/loading.jpg"}
+                    altText={"image"}
+                    classValue={
+                      "w-full object-cover h-full object-center block"
+                    }
                   />
                 </div>
                 <div className="md:p-2 p-1 w-1/2">
-                  <img
-                    alt="gallery"
-                    loading="lazy"
-                    className="w-full object-cover h-full object-center block"
-                    src={`https://drive.google.com/uc?export=view&id=${gallery2Data[0].img5}`}
+                  <ImageLoader
+                    mainImageSrc={`https://drive.google.com/uc?export=view&id=${gallery2Data[0].img5}`}
+                    altImageSrc={"/img/loading.jpg"}
+                    altText={"image"}
+                    classValue={
+                      "w-full object-cover h-full object-center block"
+                    }
                   />
                 </div>
                 <div className="md:p-2 p-1 w-1/2">
-                  <img
-                    alt="gallery"
-                    loading="lazy"
-                    className="w-full object-cover h-full object-center block"
-                    src={`https://drive.google.com/uc?export=view&id=${gallery2Data[0].img6}`}
+                  <ImageLoader
+                    mainImageSrc={`https://drive.google.com/uc?export=view&id=${gallery2Data[0].img6}`}
+                    altImageSrc={"/img/loading.jpg"}
+                    altText={"image"}
+                    classValue={
+                      "w-full object-cover h-full object-center block"
+                    }
                   />
                 </div>
               </div>
@@ -218,53 +242,65 @@ const Gallery3 = ({ gallery3Data }) => {
             <div className="flex flex-wrap md:-m-2 -m-1">
               <div className="flex flex-wrap w-1/2">
                 <div className="md:p-2 p-1 w-1/2">
-                  <img
-                    alt="gallery"
-                    loading="lazy"
-                    className="w-full object-cover h-full object-center block"
-                    src={`https://drive.google.com/uc?export=view&id=${gallery3Data[0].img1}`}
+                  <ImageLoader
+                    mainImageSrc={`https://drive.google.com/uc?export=view&id=${gallery3Data[0].img1}`}
+                    altImageSrc={"/img/loading.jpg"}
+                    altText={"image"}
+                    classValue={
+                      "w-full object-cover h-full object-center block"
+                    }
                   />
                 </div>
                 <div className="md:p-2 p-1 w-1/2">
-                  <img
-                    alt="gallery"
-                    loading="lazy"
-                    className="w-full object-cover h-full object-center block"
-                    src={`https://drive.google.com/uc?export=view&id=${gallery3Data[0].img2}`}
+                  <ImageLoader
+                    mainImageSrc={`https://drive.google.com/uc?export=view&id=${gallery3Data[0].img2}`}
+                    altImageSrc={"/img/loading.jpg"}
+                    altText={"image"}
+                    classValue={
+                      "w-full object-cover h-full object-center block"
+                    }
                   />
                 </div>
                 <div className="md:p-2 p-1 w-full">
-                  <img
-                    alt="gallery"
-                    loading="lazy"
-                    className="w-full h-full object-cover object-center block"
-                    src={`https://drive.google.com/uc?export=view&id=${gallery3Data[0].img3}`}
+                  <ImageLoader
+                    mainImageSrc={`https://drive.google.com/uc?export=view&id=${gallery3Data[0].img3}`}
+                    altImageSrc={"/img/loading.jpg"}
+                    altText={"image"}
+                    classValue={
+                      "w-full object-cover h-full object-center block"
+                    }
                   />
                 </div>
               </div>
               <div className="flex flex-wrap w-1/2">
                 <div className="md:p-2 p-1 w-full">
-                  <img
-                    alt="gallery"
-                    loading="lazy"
-                    className="w-full h-full object-cover object-center block"
-                    src={`https://drive.google.com/uc?export=view&id=${gallery3Data[0].img4}`}
+                  <ImageLoader
+                    mainImageSrc={`https://drive.google.com/uc?export=view&id=${gallery3Data[0].img4}`}
+                    altImageSrc={"/img/loading.jpg"}
+                    altText={"image"}
+                    classValue={
+                      "w-full object-cover h-full object-center block"
+                    }
                   />
                 </div>
                 <div className="md:p-2 p-1 w-1/2">
-                  <img
-                    alt="gallery"
-                    loading="lazy"
-                    className="w-full object-cover h-full object-center block"
-                    src={`https://drive.google.com/uc?export=view&id=${gallery3Data[0].img5}`}
+                  <ImageLoader
+                    mainImageSrc={`https://drive.google.com/uc?export=view&id=${gallery3Data[0].img5}`}
+                    altImageSrc={"/img/loading.jpg"}
+                    altText={"image"}
+                    classValue={
+                      "w-full object-cover h-full object-center block"
+                    }
                   />
                 </div>
                 <div className="md:p-2 p-1 w-1/2">
-                  <img
-                    alt="gallery"
-                    loading="lazy"
-                    className="w-full object-cover h-full object-center block"
-                    src={`https://drive.google.com/uc?export=view&id=${gallery3Data[0].img6}`}
+                  <ImageLoader
+                    mainImageSrc={`https://drive.google.com/uc?export=view&id=${gallery3Data[0].img6}`}
+                    altImageSrc={"/img/loading.jpg"}
+                    altText={"image"}
+                    classValue={
+                      "w-full object-cover h-full object-center block"
+                    }
                   />
                 </div>
               </div>
@@ -285,53 +321,65 @@ const Gallery4 = ({ gallery4Data }) => {
             <div className="flex flex-wrap md:-m-2 -m-1">
               <div className="flex flex-wrap w-1/2">
                 <div className="md:p-2 p-1 w-1/2">
-                  <img
-                    loading="lazy"
-                    alt="gallery"
-                    className="w-full object-cover h-full object-center block"
-                    src={`https://drive.google.com/uc?export=view&id=${gallery4Data[0].img1}`}
+                  <ImageLoader
+                    mainImageSrc={`https://drive.google.com/uc?export=view&id=${gallery4Data[0].img1}`}
+                    altImageSrc={"/img/loading.jpg"}
+                    altText={"image"}
+                    classValue={
+                      "w-full object-cover h-full object-center block"
+                    }
                   />
                 </div>
                 <div className="md:p-2 p-1 w-1/2">
-                  <img
-                    alt="gallery"
-                    loading="lazy"
-                    className="w-full object-cover h-full object-center block"
-                    src={`https://drive.google.com/uc?export=view&id=${gallery4Data[0].img2}`}
+                  <ImageLoader
+                    mainImageSrc={`https://drive.google.com/uc?export=view&id=${gallery4Data[0].img2}`}
+                    altImageSrc={"/img/loading.jpg"}
+                    altText={"image"}
+                    classValue={
+                      "w-full object-cover h-full object-center block"
+                    }
                   />
                 </div>
                 <div className="md:p-2 p-1 w-full">
-                  <img
-                    alt="gallery"
-                    loading="lazy"
-                    className="w-full h-full object-cover object-center block"
-                    src={`https://drive.google.com/uc?export=view&id=${gallery4Data[0].img3}`}
+                  <ImageLoader
+                    mainImageSrc={`https://drive.google.com/uc?export=view&id=${gallery4Data[0].img3}`}
+                    altImageSrc={"/img/loading.jpg"}
+                    altText={"image"}
+                    classValue={
+                      "w-full object-cover h-full object-center block"
+                    }
                   />
                 </div>
               </div>
               <div className="flex flex-wrap w-1/2">
                 <div className="md:p-2 p-1 w-full">
-                  <img
-                    alt="gallery"
-                    loading="lazy"
-                    className="w-full h-full object-cover object-center block"
-                    src={`https://drive.google.com/uc?export=view&id=${gallery4Data[0].img4}`}
+                  <ImageLoader
+                    mainImageSrc={`https://drive.google.com/uc?export=view&id=${gallery4Data[0].img4}`}
+                    altImageSrc={"/img/loading.jpg"}
+                    altText={"image"}
+                    classValue={
+                      "w-full object-cover h-full object-center block"
+                    }
                   />
                 </div>
                 <div className="md:p-2 p-1 w-1/2">
-                  <img
-                    alt="gallery"
-                    loading="lazy"
-                    className="w-full object-cover h-full object-center block"
-                    src={`https://drive.google.com/uc?export=view&id=${gallery4Data[0].img5}`}
+                  <ImageLoader
+                    mainImageSrc={`https://drive.google.com/uc?export=view&id=${gallery4Data[0].img5}`}
+                    altImageSrc={"/img/loading.jpg"}
+                    altText={"image"}
+                    classValue={
+                      "w-full object-cover h-full object-center block"
+                    }
                   />
                 </div>
                 <div className="md:p-2 p-1 w-1/2">
-                  <img
-                    alt="gallery"
-                    loading="lazy"
-                    className="w-full object-cover h-full object-center block"
-                    src={`https://drive.google.com/uc?export=view&id=${gallery4Data[0].img6}`}
+                  <ImageLoader
+                    mainImageSrc={`https://drive.google.com/uc?export=view&id=${gallery4Data[0].img6}`}
+                    altImageSrc={"/img/loading.jpg"}
+                    altText={"image"}
+                    classValue={
+                      "w-full object-cover h-full object-center block"
+                    }
                   />
                 </div>
               </div>
@@ -343,12 +391,11 @@ const Gallery4 = ({ gallery4Data }) => {
   );
 };
 
-
 export async function getStaticProps() {
-  let gallery1Data = await fs.readFile("gallerydata/gallery1.json", "utf-8");
-  let gallery2Data = await fs.readFile("gallerydata/gallery2.json", "utf-8");
-  let gallery3Data = await fs.readFile("gallerydata/gallery3.json", "utf-8");
-  let gallery4Data = await fs.readFile("gallerydata/gallery4.json", "utf-8");
+  let gallery1Data = await fs.readFile("data/gallery/gallery1.json", "utf-8");
+  let gallery2Data = await fs.readFile("data/gallery/gallery2.json", "utf-8");
+  let gallery3Data = await fs.readFile("data/gallery/gallery3.json", "utf-8");
+  let gallery4Data = await fs.readFile("data/gallery/gallery4.json", "utf-8");
 
   gallery1Data = JSON.parse(gallery1Data);
   gallery2Data = JSON.parse(gallery2Data);
