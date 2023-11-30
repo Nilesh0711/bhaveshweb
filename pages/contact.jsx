@@ -8,15 +8,15 @@ const Contact = () => {
   return (
     <div className="gradient-bg-services">
       <Head>
-        <title>Contact - Bhavesh Gupta | Prime Minister Research Fellow | Department of Physics | IIT Madras</title>
+        <title>Contact - Bhavesh Gupta | Prime Minister Research Fellow</title>
         <meta name="description" content="CQuICC | Center for Quantum Information, Communication and Computing | Department of Physics | IIT Madras | Prime Minister Research Fellow" />
         <link rel="shortcut icon" href="/favicon/favicon.ico" />
       </Head>
       <Navbar contact={"font-bold text-blue-500"} extra={""} />
       <div className="flex flex-col px-6 md:w-4/5 my-12 m-auto">
-        <div className="font-extrabold text-xl md:text-4xl text-black">
+        <h1 className="font-extrabold text-xl md:text-4xl text-black">
           Contact
-        </div>
+        </h1>
         <div className="info md:mt-20 mt-10">
           <div className="address text-black md:px-8 px-3 space-y-5 md:text-lg">
             <div className="email">

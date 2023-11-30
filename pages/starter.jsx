@@ -8,36 +8,25 @@ import "swiper/css";
 import "swiper/css/effect-fade";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import { EffectFade,Autoplay } from "swiper";
-
+import { EffectFade, Autoplay } from "swiper";
 
 const Starter = () => {
   return (
     <div>
       <Head>
-        <title>Bhavesh Gupta | Prime Minister Research Fellow | Department of Physics | IIT Madras</title>
-        <meta name="description" content="CQuICC | Center for Quantum Information, Communication and Computing | Department of Physics | IIT Madras | Prime Minister Research Fellow" />
+        <title>
+          Bhavesh Gupta | Bhavesh Gupta | Prime Minister Research Fellow
+        </title>
+        <meta
+          name="description"
+          content="CQuICC | Center for Quantum Information, Communication and Computing | Department of Physics | IIT Madras | Prime Minister Research Fellow"
+        />
         <link rel="shortcut icon" href="/favicon/favicon.ico" />
       </Head>
       <SliderImage />
     </div>
   );
 };
-
-// export const metadata: Metadata = {
-//   title: {
-//     default : "International Conference on Quantum Communication, Measurement and Computing, 26-30 August 2024, Chennai",
-//     template: '%s | International Conference on Quantum Communication, Measurement and Computing, 26-30 August 2024, Chennai'
-//   },
-//   description:
-//     "International Conference | IIT Madras | Quantum Communications and Quantum Cryptography | Quantum Sensing and Quantum Metrology | Quantum Computing and Quantum Simulation | Quantum Networks | Quantum Information Theory | Quantum Control and Quantum Engineering | Foundations of Quantum Physics",
-//   icons: {
-//     icon: ["/favicon.ico?v=1"],
-//     apple: ["/apple-touch-icon.png?v=4"],
-//     shortcut: ["/apple-touch-icon.png"],
-//   },
-//   manifest: "/site.webmanifest",
-// };
 
 const SliderImage = () => {
   return (
@@ -55,18 +44,21 @@ const SliderImage = () => {
         >
           <SwiperSlide>
             <img
+              alt="image"
               className="object-cover w-full h-screen object-center bg-center bg-cover"
               src="/img/slider/pic_1.jpg"
             />
           </SwiperSlide>
           <SwiperSlide>
             <img
+              alt="image"
               className="object-cover w-full h-screen object-center bg-center bg-cover"
               src="/img/slider/pic_2.jpg"
             />
           </SwiperSlide>
           <SwiperSlide>
             <img
+              alt="image"
               className="object-cover w-full h-screen object-center bg-center bg-cover"
               src="/img/slider/pic_3.jpg"
             />
@@ -74,12 +66,8 @@ const SliderImage = () => {
         </Swiper>
 
         <div className="absolute flex-col items-center flex text-white opacity-80 w-full z-50">
-          <div className="text-2xl font-light mt-6">
-            PMRF RESEARCH SCHOLOR
-          </div>
-          <div className="text-xl font-light mt-6">
-          ( PMRF ID : 2502421 )
-          </div>
+          <div className="text-2xl font-light mt-6">PMRF RESEARCH SCHOLOR</div>
+          <div className="text-xl font-light mt-6">( PMRF ID : 2502421 )</div>
         </div>
 
         <div className="absolute flex-col items-center flex text-white w-full z-10 h-full justify-center">

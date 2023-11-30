@@ -8,7 +8,7 @@ const Home = () => {
   return (
     <div>
       <Head>
-        <title>Home - Bhavesh Gupta | Prime Minister Research Fellow | Department of Physics | IIT Madras</title>
+        <title>Home - Bhavesh Gupta | Prime Minister Research Fellow</title>
         <meta name="description" content="CQuICC | Center for Quantum Information, Communication and Computing | Department of Physics | IIT Madras | Prime Minister Research Fellow" />
         <link rel="shortcut icon" href="/favicon/favicon.ico" />
       </Head>
@@ -29,7 +29,7 @@ const Welcome = () => {
   return (
     <>
       <section className="flex flex-col text-center md:w-3/5 items-center justify-center mx-auto px-4">
-        <div className="pt-12 text-xl md:text-2xl font-semibold text-gray-900">Welcome to my homepage</div>
+        <h1 className="pt-12 text-xl md:text-2xl font-semibold text-gray-900">Welcome to my homepage</h1>
         <div className="pt-6 text-base md:text-lg text-gray-600">
           I am Bhavesh Gupta, a research scholar in the Physics Department at
           IIT Madras.
@@ -177,7 +177,7 @@ const Quotes = () => {
         <div className="md:w-1/3 w-full mx-auto rounded-lg px-5 pt-5 pb-10 text-gray-800">
           <div className="w-full pt-1 pb-5">
             <div className="overflow-hidden rounded-full w-20 h-20 -mt-16 mx-auto shadow-lg">
-              <img src="/img/testimonial/qworld.jpg" alt="" />
+              <img src="/img/testimonial/qworld.jpg" alt="image" />
             </div>
           </div>
           <div className="w-full mb-10">
@@ -204,7 +204,7 @@ const Quotes = () => {
         <div className="md:w-1/3 w-full mx-auto rounded-lg  px-5 pt-5 pb-10 text-gray-800">
           <div className="w-full pt-1 pb-5">
             <div className="overflow-hidden rounded-full w-20 h-20 -mt-16 mx-auto shadow-lg">
-              <img src="/img/testimonial/david.jpg" alt="" />
+              <img src="/img/testimonial/david.jpg" alt="image" />
             </div>
           </div>
           <div className="w-full mb-10">
@@ -230,7 +230,7 @@ const Quotes = () => {
         <div className="md:w-1/3 w-full mx-auto rounded-lg  px-5 pt-5 pb-10 text-gray-800">
           <div className="w-full pt-1 pb-5">
             <div className="overflow-hidden rounded-full w-20 h-20 -mt-16 mx-auto shadow-lg">
-              <img src="/img/testimonial/richard.jpg" alt="" />
+              <img src="/img/testimonial/richard.jpg" alt="image" />
             </div>
           </div>
           <div className="w-full mb-10">

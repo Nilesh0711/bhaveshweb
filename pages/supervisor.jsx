@@ -10,9 +10,7 @@ const Supervisor = () => {
     <div>
       <Head>
         <title>
-          Supervisor - Bhavesh Gupta | Prime Minister Research Fellow |
-          Department of Physics | IIT Madras
-        </title>
+          Supervisor - Bhavesh Gupta | Prime Minister Research Fellow</title>
         <meta
           name="description"
           content="CQuICC | Center for Quantum Information, Communication and Computing | Department of Physics | IIT Madras | Prime Minister Research Fellow"
@@ -22,9 +20,9 @@ const Supervisor = () => {
       <Navbar supervisor={"font-bold text-blue-500"} />
       <main className="gradient-bg-services">
         <div className="flex flex-col px-6 md:w-4/5 py-12 m-auto">
-          <div className="font-extrabold text-xl md:text-4xl text-black">
+          <h1 className="font-extrabold text-xl md:text-4xl text-black">
             Supervisor
-          </div>
+          </h1>
           <div className="info md:mt-20 mt-5">
             <div className="md:text-lg text-black md:w-1/2">
               I am being supervised by <strong>Dr. Prabha Mandayam </strong> at

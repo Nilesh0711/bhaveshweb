@@ -16,10 +16,7 @@ const Teaching = (props) => {
   return (
     <div>
       <Head>
-        <title>
-          Teaching - Bhavesh Gupta | Prime Minister Research Fellow |
-          Department of Physics | IIT Madras
-        </title>
+        <title>Teaching - Bhavesh Gupta | Prime Minister Research Fellow</title>
         <meta
           name="description"
           content="CQuICC | Center for Quantum Information, Communication and Computing | Department of Physics | IIT Madras | Prime Minister Research Fellow"
@@ -29,9 +26,9 @@ const Teaching = (props) => {
       <Navbar teaching={"font-bold text-blue-500"} extra={""} />
       <main className="gradient-bg-services">
         <div className="flex flex-col px-6 md:w-4/5 pt-12 m-auto">
-          <div className="font-extrabold text-xl md:text-4xl text-black">
+          <h1 className="font-extrabold text-xl md:text-4xl text-black">
             My Teaching Activities
-          </div>
+          </h1>
           <div className="info md:mt-20 my-10 md:w-1/2 text-black">
             <section>
               <div className="mt-16 text-lg md:text-2xl font-bold">

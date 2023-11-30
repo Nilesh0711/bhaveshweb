@@ -26,7 +26,7 @@ const Research = () => {
   return (
     <div>
       <Head>
-        <title>Research - Bhavesh Gupta | Prime Minister Research Fellow | Department of Physics | IIT Madras</title>
+        <title>Research - Bhavesh Gupta | Prime Minister Research Fellow</title>
         <meta name="description" content="CQuICC | Center for Quantum Information, Communication and Computing | Department of Physics | IIT Madras | Prime Minister Research Fellow" />
         <link rel="shortcut icon" href="/favicon/favicon.ico" />
       </Head>
@@ -39,9 +39,9 @@ const Research = () => {
         )}
 
         <div className="flex flex-col px-6 md:w-4/5 py-12 m-auto">
-          <div className="font-extrabold text-xl md:text-4xl text-black">
+          <h1 className="font-extrabold text-xl md:text-4xl text-black">
             Research
-          </div>
+          </h1>
           <Motivation />
           <LoadImage />
           <hr className="mt-16 mx-auto w-48 h-1 bg-gray-900 rounded border-0"></hr>
@@ -124,36 +124,6 @@ const WorkList = () => {
             </div>
           </div>
         </div>
-
-        {/* <div className="px-6 md:w-4/5 m-auto">
-        {data.map((element, index) => {
-          return (
-            <>
-              {index == 0 ? (
-                <></>
-              ) : (
-                <>
-                  <hr className="my-12 h-px bg-gray-200 border-0 dark:bg-gray-700" />
-                </>
-              )}
-              <section key={element.title} className="">
-                <h2 className="font-semibold text-lg md:text-2xl">{element.title}</h2>
-                <div className="mt-8 md:w-5/6 text-justify text-base md:text-left">{element.desc}</div>
-                <figure>
-                  <img
-                    className="mt-12 rounded-md w-full"
-                    src={element.pics}
-                    alt="colloids"
-                  />
-                  <figcaption className="mt-6">
-                    <strong>Figure</strong> : <em>{element.figure}</em>
-                  </figcaption>
-                </figure>
-              </section>
-            </>
-          );
-        })}
-      </div> */}
 
         <hr className="mt-16 md:mt-24 mx-auto w-48 h-1 bg-gray-900 rounded border-0"></hr>
 

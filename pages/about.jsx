@@ -14,7 +14,7 @@ const About = (props) => {
   return (
     <div>
       <Head>
-        <title>About - Bhavesh Gupta | Prime Minister Research Fellow | Department of Physics | IIT Madras</title>
+        <title>About - Bhavesh Gupta | Prime Minister Research Fellow</title>
         <meta name="description" content="CQuICC | Center for Quantum Information, Communication and Computing | Department of Physics | IIT Madras | Prime Minister Research Fellow" />
         <link rel="shortcut icon" href="/favicon/favicon.ico" />
       </Head>
@@ -136,9 +136,9 @@ const AboutInformation = () => {
   return (
     <>
       <section className="flex flex-col md:m-auto col-span-2 pt-5 md:pt-12 px-5">
-        <div className="font-extrabold text-2xl md:text-4xl text-black">
+        <h1 className="font-extrabold text-2xl md:text-4xl text-black">
           About
-        </div>
+        </h1>
         <div className="info md:my-20 my-5 md:text-left text-justify text-gray-600 md:text-lg text-base">
           <div>Hi, I am Bhavesh. Again, welcome to my website.</div>
           <br />

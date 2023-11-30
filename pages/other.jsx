@@ -14,16 +14,16 @@ const Other = (props) => {
   return (
     <div>
       <Head>
-        <title>Others - Bhavesh Gupta | Prime Minister Research Fellow | Department of Physics | IIT Madras</title>
+        <title>Others - Bhavesh Gupta | Prime Minister Research Fellow</title>
         <meta name="description" content="CQuICC | Center for Quantum Information, Communication and Computing | Department of Physics | IIT Madras | Prime Minister Research Fellow" />
         <link rel="shortcut icon" href="/favicon/favicon.ico" />
       </Head>
       <Navbar other={"font-bold text-blue-500"} extra={""} />
       <main>
         <div className="flex flex-col px-6 md:w-4/5 mt-12 m-auto">
-          <div className="font-extrabold text-xl text-black md:text-4xl">
+          <h1 className="font-extrabold text-xl text-black md:text-4xl">
             Other things i do ...
-          </div>
+          </h1>
         </div>
         <div className="gallery pt-6 md:pt-5">
           <div className="title text-center font-bold text-lg pt-6 text-black md:text-3xl">
