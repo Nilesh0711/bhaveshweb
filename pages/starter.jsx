@@ -15,14 +15,29 @@ const Starter = () => {
   return (
     <div>
       <Head>
-        <title>Home</title>
-        <meta name="description" content="Home" />
-        <link rel="icon" href="/favicon.ico" />
+        <title>Bhavesh Gupta | Prime Minister Research Fellow | Department of Physics | IIT Madras</title>
+        <meta name="description" content="CQuICC | Center for Quantum Information, Communication and Computing | Department of Physics | IIT Madras | Prime Minister Research Fellow" />
+        <link rel="shortcut icon" href="/favicon/favicon.ico" />
       </Head>
       <SliderImage />
     </div>
   );
 };
+
+// export const metadata: Metadata = {
+//   title: {
+//     default : "International Conference on Quantum Communication, Measurement and Computing, 26-30 August 2024, Chennai",
+//     template: '%s | International Conference on Quantum Communication, Measurement and Computing, 26-30 August 2024, Chennai'
+//   },
+//   description:
+//     "International Conference | IIT Madras | Quantum Communications and Quantum Cryptography | Quantum Sensing and Quantum Metrology | Quantum Computing and Quantum Simulation | Quantum Networks | Quantum Information Theory | Quantum Control and Quantum Engineering | Foundations of Quantum Physics",
+//   icons: {
+//     icon: ["/favicon.ico?v=1"],
+//     apple: ["/apple-touch-icon.png?v=4"],
+//     shortcut: ["/apple-touch-icon.png"],
+//   },
+//   manifest: "/site.webmanifest",
+// };
 
 const SliderImage = () => {
   return (

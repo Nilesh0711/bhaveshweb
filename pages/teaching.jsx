@@ -16,9 +16,15 @@ const Teaching = (props) => {
   return (
     <div>
       <Head>
-        <title>Teachings</title>
-        <meta name="description" content="Teachings" />
-        <link rel="icon" href="/favicon.ico" />
+        <title>
+          Teaching - Bhavesh Gupta | Prime Minister Research Fellow |
+          Department of Physics | IIT Madras
+        </title>
+        <meta
+          name="description"
+          content="CQuICC | Center for Quantum Information, Communication and Computing | Department of Physics | IIT Madras | Prime Minister Research Fellow"
+        />
+        <link rel="shortcut icon" href="/favicon/favicon.ico" />
       </Head>
       <Navbar teaching={"font-bold text-blue-500"} extra={""} />
       <main className="gradient-bg-services">

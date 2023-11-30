@@ -8,9 +8,9 @@ const Contact = () => {
   return (
     <div className="gradient-bg-services">
       <Head>
-        <title>Contact</title>
-        <meta name="description" content="Contact" />
-        <link rel="icon" href="/favicon.ico" />
+        <title>Contact - Bhavesh Gupta | Prime Minister Research Fellow | Department of Physics | IIT Madras</title>
+        <meta name="description" content="CQuICC | Center for Quantum Information, Communication and Computing | Department of Physics | IIT Madras | Prime Minister Research Fellow" />
+        <link rel="shortcut icon" href="/favicon/favicon.ico" />
       </Head>
       <Navbar contact={"font-bold text-blue-500"} extra={""} />
       <div className="flex flex-col px-6 md:w-4/5 my-12 m-auto">

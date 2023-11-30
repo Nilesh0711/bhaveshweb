@@ -11,9 +11,9 @@ const Publications = (props) => {
   return (
     <div>
       <Head>
-        <title>Publications</title>
-        <meta name="description" content="Publications" />
-        <link rel="icon" href="/favicon.ico" />
+        <title>Publications - Bhavesh Gupta | Prime Minister Research Fellow | Department of Physics | IIT Madras</title>
+        <meta name="description" content="CQuICC | Center for Quantum Information, Communication and Computing | Department of Physics | IIT Madras | Prime Minister Research Fellow" />
+        <link rel="shortcut icon" href="/favicon/favicon.ico" />
       </Head>
       <Navbar publication={"font-bold text-blue-500"} extra={""} />
       <main>

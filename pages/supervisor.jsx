@@ -6,13 +6,18 @@ import Footer from "../components/footer";
 import ImageLoader from "../components/imageLoader";
 
 const Supervisor = () => {
-
   return (
     <div>
       <Head>
-        <title>Supervisor</title>
-        <meta name="description" content="Supervisor" />
-        <link rel="icon" href="/favicon.ico" />
+        <title>
+          Supervisor - Bhavesh Gupta | Prime Minister Research Fellow |
+          Department of Physics | IIT Madras
+        </title>
+        <meta
+          name="description"
+          content="CQuICC | Center for Quantum Information, Communication and Computing | Department of Physics | IIT Madras | Prime Minister Research Fellow"
+        />
+        <link rel="shortcut icon" href="/favicon/favicon.ico" />
       </Head>
       <Navbar supervisor={"font-bold text-blue-500"} />
       <main className="gradient-bg-services">

@@ -8,9 +8,9 @@ const Home = () => {
   return (
     <div>
       <Head>
-        <title>Home</title>
-        <meta name="description" content="Home" />
-        <link rel="icon" href="/favicon.ico" />
+        <title>Home - Bhavesh Gupta | Prime Minister Research Fellow | Department of Physics | IIT Madras</title>
+        <meta name="description" content="CQuICC | Center for Quantum Information, Communication and Computing | Department of Physics | IIT Madras | Prime Minister Research Fellow" />
+        <link rel="shortcut icon" href="/favicon/favicon.ico" />
       </Head>
       <Navbar home={"font-bold text-blue-500"} extra={""} />
       <main id="main-content" className="relative grow gradient-bg-services">

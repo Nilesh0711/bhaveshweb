@@ -14,9 +14,9 @@ const About = (props) => {
   return (
     <div>
       <Head>
-        <title>About</title>
-        <meta name="description" content="About" />
-        <link rel="icon" href="/favicon.ico" />
+        <title>About - Bhavesh Gupta | Prime Minister Research Fellow | Department of Physics | IIT Madras</title>
+        <meta name="description" content="CQuICC | Center for Quantum Information, Communication and Computing | Department of Physics | IIT Madras | Prime Minister Research Fellow" />
+        <link rel="shortcut icon" href="/favicon/favicon.ico" />
       </Head>
       <Navbar about={"font-bold text-blue-500"} extra={""} />
       <main className="gradient-bg-services">
