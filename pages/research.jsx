@@ -26,8 +26,13 @@ const Research = () => {
   return (
     <div>
       <Head>
-        <title>Research - Bhavesh Gupta | Prime Minister Research Fellow</title>
-        <meta name="description" content="CQuICC | Center for Quantum Information, Communication and Computing | Department of Physics | IIT Madras | Prime Minister Research Fellow" />
+        <title>Research - Bhavesh Gupta | Prime Minister Research Fellow | IIT Madras</title>
+        <meta name="description" content="Center for Quantum Information, Communication and Computing | Department of Physics | Prime Minister Research Fellow" />
+        <meta name="keywords" content="Quantum" />
+        <meta name="keywords" content="PMRF" />
+        <meta name="keywords" content="IIT Madras" />
+        <meta name="keywords" content="CQuICC" />
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
         <link rel="shortcut icon" href="/favicon/favicon.ico" />
       </Head>
       <Navbar research={"font-bold text-blue-500"} extra={""} />
@@ -284,7 +289,7 @@ const ProgressReport = ({ showAlert }) => {
               />
               <SemesterButton
                 title={"Semester 3"}
-                link={""}
+                link={"https://drive.google.com/file/d/1c4OLDaY5_hmb4gEYKZLYXcRutvq9mN7G/view?usp=sharing"}
                 showAlert={showAlert}
               />
               <SemesterButton

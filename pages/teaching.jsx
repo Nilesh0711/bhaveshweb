@@ -16,11 +16,18 @@ const Teaching = (props) => {
   return (
     <div>
       <Head>
-        <title>Teaching - Bhavesh Gupta | Prime Minister Research Fellow</title>
+        <title>
+          Teaching - Bhavesh Gupta | Prime Minister Research Fellow | IIT Madras
+        </title>
         <meta
           name="description"
-          content="CQuICC | Center for Quantum Information, Communication and Computing | Department of Physics | IIT Madras | Prime Minister Research Fellow"
+          content="Center for Quantum Information, Communication and Computing | Department of Physics | Prime Minister Research Fellow"
         />
+        <meta name="keywords" content="Quantum" />
+        <meta name="keywords" content="PMRF" />
+        <meta name="keywords" content="IIT Madras" />
+        <meta name="keywords" content="CQuICC" />
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
         <link rel="shortcut icon" href="/favicon/favicon.ico" />
       </Head>
       <Navbar teaching={"font-bold text-blue-500"} extra={""} />

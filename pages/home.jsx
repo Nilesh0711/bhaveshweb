@@ -8,8 +8,13 @@ const Home = () => {
   return (
     <div>
       <Head>
-        <title>Home - Bhavesh Gupta | Prime Minister Research Fellow</title>
-        <meta name="description" content="CQuICC | Center for Quantum Information, Communication and Computing | Department of Physics | IIT Madras | Prime Minister Research Fellow" />
+        <title>Home - Bhavesh Gupta | Prime Minister Research Fellow | IIT Madras</title>
+        <meta name="description" content="Center for Quantum Information, Communication and Computing | Department of Physics | Prime Minister Research Fellow" />
+        <meta name="keywords" content="Quantum" />
+        <meta name="keywords" content="PMRF" />
+        <meta name="keywords" content="IIT Madras" />
+        <meta name="keywords" content="CQuICC" />
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
         <link rel="shortcut icon" href="/favicon/favicon.ico" />
       </Head>
       <Navbar home={"font-bold text-blue-500"} extra={""} />
@@ -61,14 +66,14 @@ const Gallery = () => {
                   src="/img/galleryHome/ckt.jpg"
                 />
                 <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-gray-900 opacity-0 hover:opacity-100">
-                  <h1 className="title-font text-lg font-medium text-gray-300 mb-3">
+                  <div className="title-font text-lg font-medium text-gray-300 mb-3">
                     The write-once runs anywhere Qiskit pipeline.
                     <br />
                     <br />
                     Users supply a single input circuit and communicate the
                     desired target device platform via the choice of backend
                     passed to the Qiskit transpiler.
-                  </h1>
+                  </div>
                 </div>
               </div>
             </div>
@@ -80,12 +85,12 @@ const Gallery = () => {
                   src="/img/galleryHome/depth.jpg"
                 />
                 <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-gray-900 opacity-0 hover:opacity-100">
-                  <h1 className="title-font text-lg font-medium text-gray-300 mb-3">
+                  <div className="title-font text-lg font-medium text-gray-300 mb-3">
                     Coding Multi-qubit Circuits in Qiskit <br />
                     <br /> Quantum Circuits, Bell States, and Entanglement{" "}
                     <br /> Multi-qubit quantum circuit with Hadamard gates, CNOT
                     gates, X gates, etc.
-                  </h1>
+                  </div>
                 </div>
               </div>
             </div>
@@ -97,13 +102,13 @@ const Gallery = () => {
                   src="/img/galleryHome/graph.jpg"
                 />
                 <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-gray-900 opacity-0 hover:opacity-100">
-                  <h1 className="title-font text-lg font-medium text-gray-300 mb-3">
+                  <div className="title-font text-lg font-medium text-gray-300 mb-3">
                     Quantum mechanics and computer science <br /> <br />{" "}
                     Introduced before moving on to describe what a quantum
                     computer is, how it can be used to solve problems faster
                     than 'classical' computers and its real-world
                     implementation.
-                  </h1>
+                  </div>
                 </div>
               </div>
             </div>
@@ -115,14 +120,14 @@ const Gallery = () => {
                   src="/img/galleryHome/ibm_qiskit.jpg"
                 />
                 <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-gray-900 opacity-0 hover:opacity-100">
-                  <h1 className="title-font text-lg font-medium text-gray-300 mb-3">
+                  <div className="title-font text-lg font-medium text-gray-300 mb-3">
                     Qiskit is an open-source SDK for working with quantum
                     computers at the level of pulses, circuits, and application
                     modules. Qiskit includes a comprehensive set of quantum
                     gates and a variety of pre-built circuits so users at all
                     levels can use Qiskit for research and application
                     development.
-                  </h1>
+                  </div>
                 </div>
               </div>
             </div>
@@ -134,13 +139,13 @@ const Gallery = () => {
                   src="/img/galleryHome/qcomputer.jpg"
                 />
                 <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-gray-900 opacity-0 hover:opacity-100">
-                  <h1 className="title-font text-lg font-medium text-gray-300 mb-3">
+                  <div className="title-font text-lg font-medium text-gray-300 mb-3">
                     The consortium, including Toyota, Hitachi, Toshiba, and Sony
                     Group, was formed last year to accelerate research and
                     development in the country that takes advantage of quantum
                     computing. A consortium of Japanese companies will use an
                     IBM quantum computer for research and development purposes.
-                  </h1>
+                  </div>
                 </div>
               </div>
             </div>
@@ -152,13 +157,13 @@ const Gallery = () => {
                   src="/img/galleryHome/chip.jpg"
                 />
                 <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-gray-900 opacity-0 hover:opacity-100">
-                  <h1 className="title-font text-lg font-medium text-gray-300 mb-3">
+                  <div className="title-font text-lg font-medium text-gray-300 mb-3">
                     It has just five qubits that can be manipulated, but the
                     company expects processors of 50-100 qubits to emerge within
                     the next decade. General-purpose machines, which IBM calls
                     "universal" quantum computers, will eventually use more than
                     100,000 qubits.
-                  </h1>
+                  </div>
                 </div>
               </div>
             </div>

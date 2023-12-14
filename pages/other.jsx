@@ -14,8 +14,13 @@ const Other = (props) => {
   return (
     <div>
       <Head>
-        <title>Others - Bhavesh Gupta | Prime Minister Research Fellow</title>
-        <meta name="description" content="CQuICC | Center for Quantum Information, Communication and Computing | Department of Physics | IIT Madras | Prime Minister Research Fellow" />
+        <title>Others - Bhavesh Gupta | Prime Minister Research Fellow | IIT Madras</title>
+        <meta name="description" content="Center for Quantum Information, Communication and Computing | Department of Physics | Prime Minister Research Fellow" />
+        <meta name="keywords" content="Quantum" />
+        <meta name="keywords" content="PMRF" />
+        <meta name="keywords" content="IIT Madras" />
+        <meta name="keywords" content="CQuICC" />
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
         <link rel="shortcut icon" href="/favicon/favicon.ico" />
       </Head>
       <Navbar other={"font-bold text-blue-500"} extra={""} />
@@ -49,9 +54,9 @@ const Gallery1 = ({ gallery1Data }) => {
         <section className="text-gray-600 body-font">
           <div className="container px-5 py-10 md:py-15 mx-auto md:flex flex-wrap">
             <div className="md:flex w-full mb-10 md:mb-20 flex-wrap">
-              <h1 className="text-lg md:text-3xl font-medium title-font text-black mb-4 flex items-center">
+              <div className="text-lg md:text-3xl font-medium title-font text-black mb-4 flex items-center">
                 Life at IIT Madras
-              </h1>
+              </div>
               <p className="md:w-2/3 md:ml-24 mt-5 leading-relaxed text-lg text-gray-600 text-justify">
                 There is alot that you can explore in this huge campus. It is
                 always fun to go on a cycle ride around the campus(until you
@@ -146,9 +151,9 @@ const Gallery2 = ({ gallery2Data }) => {
         <section className="text-gray-600 body-font">
           <div className="container px-5 py-6 mx-auto flex flex-wrap">
             <div className="md:flex w-full mb-10 md:mb-20 flex-wrap">
-              <h1 className="text-lg md:text-3xl font-medium title-font text-black mb-4 flex items-center">
+              <div className="text-lg md:text-3xl font-medium title-font text-black mb-4 flex items-center">
                 Life at NIT Rourkela
-              </h1>
+              </div>
               <p className="md:w-2/3 md:ml-24 mt-5 leading-relaxed text-gray-600 text-lg text-justify">
                 Life can’t be better ever anywhere other than NIT Rourkela a
                 cool place(of course not climate-wise). A huge campus filled

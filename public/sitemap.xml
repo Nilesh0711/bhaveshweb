@@ -4,49 +4,97 @@
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
 <url>
   <loc>https://www.bhaveshgupta.site/</loc>
-  <lastmod>2023-11-28T12:22:18+00:00</lastmod>
+  <lastmod>2023-11-30T10:09:01+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://www.bhaveshgupta.site/home/</loc>
-  <lastmod>2023-11-28T12:22:18+00:00</lastmod>
+  <lastmod>2023-11-30T10:09:01+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.bhaveshgupta.site/about/</loc>
-  <lastmod>2023-11-28T12:22:18+00:00</lastmod>
+  <lastmod>2023-11-30T10:09:01+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://www.bhaveshgupta.site/research/</loc>
-  <lastmod>2023-11-28T12:22:18+00:00</lastmod>
+  <lastmod>2023-11-30T10:09:01+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://www.bhaveshgupta.site/publication/</loc>
-  <lastmod>2023-11-28T12:22:18+00:00</lastmod>
+  <lastmod>2023-11-30T10:09:01+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://www.bhaveshgupta.site/supervisor/</loc>
-  <lastmod>2023-11-28T12:22:18+00:00</lastmod>
+  <lastmod>2023-11-30T10:09:01+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://www.bhaveshgupta.site/teaching/</loc>
-  <lastmod>2023-11-28T12:22:18+00:00</lastmod>
+  <lastmod>2023-11-30T10:09:01+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://www.bhaveshgupta.site/contact/</loc>
-  <lastmod>2023-11-28T12:22:18+00:00</lastmod>
+  <lastmod>2023-11-30T10:09:01+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://www.bhaveshgupta.site/other/</loc>
-  <lastmod>2023-11-28T12:22:18+00:00</lastmod>
+  <lastmod>2023-11-30T10:09:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+<url>
+  <loc>https://bhaveshgupta.site/</loc>
+  <lastmod>2023-11-30T10:10:34+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://bhaveshgupta.site/home/</loc>
+  <lastmod>2023-11-30T10:10:34+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://bhaveshgupta.site/about/</loc>
+  <lastmod>2023-11-30T10:10:34+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://bhaveshgupta.site/research/</loc>
+  <lastmod>2023-11-30T10:10:34+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://bhaveshgupta.site/publication/</loc>
+  <lastmod>2023-11-30T10:10:34+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://bhaveshgupta.site/supervisor/</loc>
+  <lastmod>2023-11-30T10:10:34+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://bhaveshgupta.site/teaching/</loc>
+  <lastmod>2023-11-30T10:10:34+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://bhaveshgupta.site/contact/</loc>
+  <lastmod>2023-11-30T10:10:34+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://bhaveshgupta.site/other/</loc>
+  <lastmod>2023-11-30T10:10:34+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 

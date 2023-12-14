@@ -10,11 +10,13 @@ const Supervisor = () => {
     <div>
       <Head>
         <title>
-          Supervisor - Bhavesh Gupta | Prime Minister Research Fellow</title>
-        <meta
-          name="description"
-          content="CQuICC | Center for Quantum Information, Communication and Computing | Department of Physics | IIT Madras | Prime Minister Research Fellow"
-        />
+          Supervisor - Bhavesh Gupta | Prime Minister Research Fellow | IIT Madras</title>
+          <meta name="description" content="Center for Quantum Information, Communication and Computing | Department of Physics | Prime Minister Research Fellow" />
+        <meta name="keywords" content="Quantum" />
+        <meta name="keywords" content="PMRF" />
+        <meta name="keywords" content="IIT Madras" />
+        <meta name="keywords" content="CQuICC" />
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
         <link rel="shortcut icon" href="/favicon/favicon.ico" />
       </Head>
       <Navbar supervisor={"font-bold text-blue-500"} />

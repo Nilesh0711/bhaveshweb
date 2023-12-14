@@ -8,8 +8,13 @@ const Contact = () => {
   return (
     <div className="gradient-bg-services">
       <Head>
-        <title>Contact - Bhavesh Gupta | Prime Minister Research Fellow</title>
-        <meta name="description" content="CQuICC | Center for Quantum Information, Communication and Computing | Department of Physics | IIT Madras | Prime Minister Research Fellow" />
+        <title>Contact - Bhavesh Gupta | Prime Minister Research Fellow | IIT Madras</title>
+        <meta name="description" content="Center for Quantum Information, Communication and Computing | Department of Physics | Prime Minister Research Fellow" />
+        <meta name="keywords" content="Quantum" />
+        <meta name="keywords" content="PMRF" />
+        <meta name="keywords" content="IIT Madras" />
+        <meta name="keywords" content="CQuICC" />
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
         <link rel="shortcut icon" href="/favicon/favicon.ico" />
       </Head>
       <Navbar contact={"font-bold text-blue-500"} extra={""} />
@@ -26,7 +31,7 @@ const Contact = () => {
               </span>{" "}
               or{" "}
               <span className="italic text-blue-600 font-bold">
-                <Link className="hover:bg-blue-600 hover:text-white hover:px-2 hover:py-1 hover:rounded-md" href="mailto:gupta.bhavesh1605@gmail.com">personal mail</Link>
+                <Link className="hover:bg-blue-600 hover:text-white hover:px-2 hover:py-1 hover:rounded-md" href="mailto:gupta.bhavesdiv605@gmail.com">personal mail</Link>
               </span>{" "}
             </div>
             <div className="email">
