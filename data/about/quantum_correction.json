@@ -1,0 +1,41 @@
+[
+  {
+    "title": "Purpose",
+    "items": [
+      {
+        "key": "Objective",
+        "value": "Aims to protect quantum information from errors induced by quantum decoherence, environmental noise, gate and measurement imperfections."
+      },
+      {
+        "key": "Concept",
+        "value": "Involves encoding quantum information in a way that errors can be detected and corrected without corrupting the information."
+      }
+    ]
+  },
+  {
+    "title": "KeyComponents",
+    "items": [
+      {
+        "key": "Encoding",
+        "value": "Information space to subspace of larger physical Hilbert space - Coding introduces redundancy."
+      },
+      { "key": "NoiseChannel", "value": "Noise process" },
+      { "key": "SyndromeExtraction", "value": "Detection" },
+      { "key": "RecoveryChannel", "value": "Correction based on syndrome" },
+      { "key": "Decoding", "value": "Back to information space" }
+    ]
+  },
+  {
+    "title": "Challenges",
+    "items": [
+      {
+        "key": "Overhead",
+        "value": "Resources required to protect, like 3-qubit code."
+      },
+      {
+        "key": "FaultTolerance",
+        "value": "Essential for large-scale practical computers when error rates are below a certain threshold."
+      }
+    ]
+  }
+]

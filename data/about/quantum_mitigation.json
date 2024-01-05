@@ -1,0 +1,54 @@
+[
+  {
+    "title": "Purpose",
+    "items": [
+      {
+        "key": "Objective",
+        "value": "Aims to reduce the impact of errors on the outcomes of computation by doing classical post-processing, without explicitly correcting the error."
+      },
+      {
+        "key": "Concept",
+        "value": "Instead of correcting errors, it involves estimation and compensating for the errors in the final results."
+      }
+    ]
+  },
+  {
+    "title": "Approaches",
+    "items": [
+      {
+        "key": "NoiseModels",
+        "value": "Representing errors and imperfections. Error rates, decoherence mechanism, spatial and temporal correlations, damping (amplitude and Phase), random unitary, depolarisation."
+      },
+      {
+        "key": "Techniques",
+        "value": "Richardson extrapolation, measurement error mitigation, and error amplification are methods used to adjust quantum results based on error models."
+      }
+    ]
+  },
+  {
+    "title": "PracticalImplementation",
+    "items": [
+      {
+        "key": "NISQDevices",
+        "value": "Intermediate level of computational capability and their susceptibility to noise. NISQ devices are not fully fault-tolerant, meaning they can produce erroneous results. Not yet error-corrected but are used with error mitigation."
+      },
+      {
+        "key": "HybridQuantumClassicalApproaches",
+        "value": "Use quantum where parallelism is implementable."
+      }
+    ]
+  },
+  {
+    "title": "Challenges",
+    "items": [
+      {
+        "key": "Accuracy",
+        "value": "Depends on effectiveness of the noise models and assumptions made about the errors."
+      },
+      {
+        "key": "Cost",
+        "value": "Require additional resources, reducing the advantage."
+      }
+    ]
+  }
+]

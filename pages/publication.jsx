@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import * as fs from "node:fs/promises";
 import Head from "next/head";
 import Navbar from "../components/navbar";
 import ImageLoader from "../components/imageLoader";
+import fs from 'fs'
 
 import Footer from "../components/footer";
 
@@ -20,7 +20,7 @@ const Publications = (props) => {
         <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
         <link rel="shortcut icon" href="/favicon/favicon.ico" />
       </Head>
-      <Navbar publication={"font-bold text-blue-500"} extra={""} />
+      <Navbar />
       <main>
         <div className="flex flex-col px-6 md:w-4/5 pt-12 m-auto">
           <h1 className="font-extrabold text-xl md:text-4xl text-black">
@@ -86,7 +86,7 @@ const Publications = (props) => {
 };
 
 export async function getStaticProps() {
-  let workProgessData = await fs.readFile(
+  let workProgessData = fs.readFileSync(
     "data/publication/workinprogress.json",
     "utf-8"
   );

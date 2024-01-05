@@ -26,8 +26,13 @@ const Research = () => {
   return (
     <div>
       <Head>
-        <title>Research - Bhavesh Gupta | Prime Minister Research Fellow | IIT Madras</title>
-        <meta name="description" content="Center for Quantum Information, Communication and Computing | Department of Physics | Prime Minister Research Fellow" />
+        <title>
+          Research - Bhavesh Gupta | Prime Minister Research Fellow | IIT Madras
+        </title>
+        <meta
+          name="description"
+          content="Center for Quantum Information, Communication and Computing | Department of Physics | Prime Minister Research Fellow"
+        />
         <meta name="keywords" content="Quantum" />
         <meta name="keywords" content="PMRF" />
         <meta name="keywords" content="IIT Madras" />
@@ -35,7 +40,7 @@ const Research = () => {
         <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
         <link rel="shortcut icon" href="/favicon/favicon.ico" />
       </Head>
-      <Navbar research={"font-bold text-blue-500"} extra={""} />
+      <Navbar />
       <main className="gradient-bg-services">
         {alert && (
           <div className="text-center text-2xl h-14 flex items-center justify-center text-white rounded-none font-bold bg-red-900">
@@ -71,9 +76,7 @@ const LoadImage = () => {
           }
           altImageSrc={"/img/loading.jpg"}
           altText={"image"}
-          classValue={
-            "object-cover object-center w-full h-full my-2"
-          }
+          classValue={"object-cover object-center w-full h-full my-2"}
         />
         <ImageLoader
           mainImageSrc={
@@ -81,9 +84,7 @@ const LoadImage = () => {
           }
           altImageSrc={"/img/loading.jpg"}
           altText={"image"}
-          classValue={
-            "object-cover object-center w-full h-full my-2"
-          }
+          classValue={"object-cover object-center w-full h-full my-2"}
         />
       </div>
     </>
@@ -95,20 +96,22 @@ const WorkList = () => {
     <>
       <section>
         <div className="md:w-4/5 mx-auto px-4">
-          <div className="info pt-20 md:w-1/2 text-black">
+          <div
+            className="info pt-20 md:w-3/4
+           text-black"
+          >
             <div className="font-bold text-lg md:text-2xl">
               Research Projects
             </div>
             <div className="my-5">
               I am currently reading the following topics.
               <ul className="list-disc text-gray-700 list-inside text-base md:text-lg space-y-4 md:mx-3 mt-12">
-                <li>Operator QEC, Entanglement assisted QEC, Holonomic QEC</li>
-                <li>Isometric extension, Block encoding, Petz recovery</li>
-                <li>Bosonic Codes and Bosonic systems</li>
-                <li>Gaussian quantum channel</li>
-                <li>Approx. and Noise-Adapted QEC</li>
+                <li>Noise/Decoherence in Superconducting Qubits </li>
+                <li>Adiabatic Quantum Computation Model</li>
+                <li>Bosonic Codes and Topological Codes</li>
+                <li>Approximate and Noise-Adapted QEC</li>
                 <li>Basics of entanglement theory</li>
-                <li>Learning Qiskit Programming</li>
+                <li>Gaussian quantum channel</li>
               </ul>
             </div>
           </div>
@@ -289,7 +292,9 @@ const ProgressReport = ({ showAlert }) => {
               />
               <SemesterButton
                 title={"Semester 3"}
-                link={"https://drive.google.com/file/d/1c4OLDaY5_hmb4gEYKZLYXcRutvq9mN7G/view?usp=sharing"}
+                link={
+                  "https://drive.google.com/file/d/1c4OLDaY5_hmb4gEYKZLYXcRutvq9mN7G/view?usp=sharing"
+                }
                 showAlert={showAlert}
               />
               <SemesterButton

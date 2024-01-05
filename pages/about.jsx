@@ -15,6 +15,9 @@ import { AiOutlineLinkedin } from "react-icons/ai";
 
 const About = (props) => {
   const responsibilityData = props.responsibilityData;
+  const quantumCorrectionData = props.quantumCorrectionData;
+  const quantumMitigationData = props.quantumMitigationData;
+  const quantumSuppressionData = props.quantumSuppressionData;
 
   return (
     <div>
@@ -33,7 +36,7 @@ const About = (props) => {
         <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
         <link rel="shortcut icon" href="/favicon/favicon.ico" />
       </Head>
-      <Navbar about={"font-bold text-blue-500"} extra={""} />
+      <Navbar />
       <main className="gradient-bg-services">
         <div className="md:grid grid-cols-3 md:w-4/5 mx-auto">
           <section className="flex flex-col mx-auto md:order-last col-span-2 md:col-span-1">
@@ -43,13 +46,15 @@ const About = (props) => {
         </div>
       </main>
 
-      <div className="gradient-bg-transactions">
-        <Ranking />
-      </div>
+      <QuantumErrorCorrectionMitigation
+        quantumCorrectionData={quantumCorrectionData}
+        quantumMitigationData={quantumMitigationData}
+        quantumSuppressionData={quantumSuppressionData}
+      />
 
-      <div>
-        <PositionResponsibility responsibilityData={responsibilityData} />
-      </div>
+      <Ranking />
+
+      <PositionResponsibility responsibilityData={responsibilityData} />
 
       <div className="pt-10 md:pt-32 gradient-bg-footer">
         <Footer />
@@ -61,8 +66,8 @@ const About = (props) => {
 const Ranking = () => {
   return (
     <>
-      <div className="md:w-4/5 mx-auto pb-12 px-4">
-        <h2 className="relative group py-5 md:py-10 text-xl text-black md:text-3xl font-bold">
+      <div className="md:w-4/5 mx-auto pb-6 md:pb-12 px-4">
+        <h2 className="relative group md:py-10 text-xl text-black md:text-3xl font-bold">
           Education
         </h2>
         <ul className="list-disc text-gray-700 list-inside text-base md:text-lg space-y-4 md:mx-3">
@@ -125,7 +130,7 @@ const PositionResponsibility = ({ responsibilityData }) => {
           let link = e.link.length != 0 ? true : false;
           return (
             <section key={index} className="text-base">
-              <ul className="list-disc text-gray-700 text-base md:text-lg space-y-4 md:mx-3">
+              <ul className="list-disc text-gray-700 text-base md:text-lg space-y-4 md:mx-3 list-inside">
                 <li>
                   <span className="font-bold text-black">{e.head} </span>
                   <span className="text-md">{e.content}</span>
@@ -183,8 +188,8 @@ const AboutInformation = () => {
               href="https://physics.iitm.ac.in/~prabhamd/index.html"
             >
               {" "}
-              Dr. Prabha Mandayam.
-            </a>{" "}
+              Dr. Prabha Mandayam.{" "}
+            </a>
             My current research interest aims at the Noise Model, Decoherence
             Mechanism, Quantum Error
             Correction/Prevention/Suppression/Mitigation and Quantum Fault
@@ -281,8 +286,8 @@ const Motivation = () => {
         I came across quantum mechanics and quantum statistical mechanics as one
         of my core courses and advanced quantum mechanics and quantum field
         theory as my professional electives during my undergrad and postgrad.
-        Thus, I got exposure to some problems and research in quantum in-
-        formation and computing. The most promising application that attracted
+        Thus, I got exposure to some problems and research in quantum
+        information and computing. The most promising application that attracted
         me was in Computational Chemistry to provide immense power to the
         machine to successfully map the molecules, which, in turn, potentially
         opens opportunities for pharmaceutical research like drug design &
@@ -306,10 +311,122 @@ const Motivation = () => {
         and quantum information processing, where maintaining quantum coherence
         is necessary for the proper functioning of quantum algorithms and
         protocols. <br />
+        <br />
+        Moreover, quantum computing can help in processing complex problems in
+        significantly less time with quality, even though all my past work
+        experience was in gravity. Now I want to work more on
+        technological-driven problems. Lastly, I did not had any professors and
+        projects in my undergrad and postgrad institute related to quantum
+        information and computing. Honestly, I did not enjoy gravity as much as
+        quantum computing. Thus I ended up interested in learning Quantum
+        Information and Computing. My broad research interests are Quantum Error
+        correction and Quantum cryptography as a tool to explore nature&#x27;s
+        most beautiful and elegant structures. <br />
       </p>
     </>
   );
 };
+
+const QuantumErrorCorrectionMitigation = ({
+  quantumCorrectionData,
+  quantumMitigationData,
+  quantumSuppressionData,
+}) => {
+  return (
+    <section className="md:w-4/5 mx-auto px-4">
+      <div className="relative group py-5 md:py-10 text-xl text-black md:text-3xl font-bold">
+        Quantum Error Correction and Mitigation
+      </div>
+
+      <div className="text-gray-800 md:text-lg text-base">
+        <p className="mb-4">
+          Quantum computers leverage the principles of quantum mechanics, such
+          as interference, superposition (Bloch sphere), and entanglement, to
+          perform certain types of calculations much faster than classical
+          computers. These properties allow them to process a large number of
+          possibilities simultaneously (Quantum parallelism).
+        </p>
+
+        <p className="mb-4">
+          Entanglement is a state where the state of one qubit is directly
+          related to the state of another, even if they are physically
+          separated. Changes to one qubit instantaneously affect the other,
+          providing a form of correlation that can be exploited for computation,
+          like the Control-NOT gate.
+        </p>
+
+        <p className="mb-4">
+          Quantum Gates are used to perform operations on qubits. They
+          manipulate the quantum states of qubits and can perform complex
+          operations more efficiently than classical logic gates.
+        </p>
+
+        <p>
+          Quantum Error Correction and Mitigation are two distinct approaches to
+          address the challenges posed by errors in quantum computers.
+        </p>
+      </div>
+
+      <div>
+        <article>
+          <h1 className="my-6 md:my-12 text-lg text-black md:text-2xl font-bold">
+            Quantum Error Correction :{" "}
+          </h1>
+          <div>
+            {quantumCorrectionData.map((section) => renderSection(section))}
+          </div>
+        </article>
+        <article>
+          <h1 className="my-6 md:my-12 text-lg text-black md:text-2xl font-bold">
+            Quantum Error Mitigation :{" "}
+          </h1>
+          <div>
+            {quantumMitigationData.map((section) => renderSection(section))}
+          </div>
+        </article>
+        <article>
+          <h1 className="my-6 md:my-12 text-lg text-black md:text-2xl font-bold">
+            Error Suppression :{" "}
+          </h1>
+          <div>
+            {quantumSuppressionData.map((section) => renderSection(section))}
+          </div>
+        </article>
+      </div>
+      <div className="text-gray-800 md:text-lg text-base my-12">
+        <p className="mb-4">
+          Quantum Noise Channel: Understanding how quantum information is
+          transmitted, manipulated, and affected by various sources of noise and
+          imperfections in quantum systems. It is a mathematical description of
+          how quantum systems evolve and interact with their surroundings.
+          Mathematically, a quantum channel is described by a completely
+          positive and trace-preserving (CPTP) map. A CPTP map ensures that the
+          quantum channel is physically meaningful and preserves the
+          probabilities, ensuring the total probability of all possible outcomes
+          remains 1.
+        </p>
+      </div>
+    </section>
+  );
+};
+
+const renderSection = (section) => (
+  <div
+    key={section.title}
+    className="relative bg-blue-100 py-4 px-6 rounded-r-3xl rounded-b-3xl shadow-md mb-4"
+  >
+    <div className="text-blue-800 text-2xl font-bold mb-2">
+      {section.title}:
+    </div>
+    <ul className="list-disc list-inside text-gray-700 text-base md:text-lg space-y-4 md:mx-3">
+      {section.items.map(({ key, value }) => (
+        <li key={key} className="mb-1">
+          <strong className="text-gray-800">{key}:</strong> {value}
+        </li>
+      ))}
+    </ul>
+  </div>
+);
 
 export async function getStaticProps() {
   let responsibilityData = await fs.readFile(
@@ -317,10 +434,33 @@ export async function getStaticProps() {
     "utf-8"
   );
 
+  let quantumCorrectionData = await fs.readFile(
+    "data/about/quantum_correction.json",
+    "utf-8"
+  );
+
+  let quantumMitigationData = await fs.readFile(
+    "data/about/quantum_correction.json",
+    "utf-8"
+  );
+
+  let quantumSuppressionData = await fs.readFile(
+    "data/about/quantum_correction.json",
+    "utf-8"
+  );
+
   responsibilityData = JSON.parse(responsibilityData);
+  quantumCorrectionData = JSON.parse(quantumCorrectionData);
+  quantumMitigationData = JSON.parse(quantumMitigationData);
+  quantumSuppressionData = JSON.parse(quantumSuppressionData);
 
   return {
-    props: { responsibilityData },
+    props: {
+      responsibilityData,
+      quantumCorrectionData,
+      quantumMitigationData,
+      quantumSuppressionData,
+    },
   };
 }
 

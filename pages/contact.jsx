@@ -17,7 +17,7 @@ const Contact = () => {
         <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
         <link rel="shortcut icon" href="/favicon/favicon.ico" />
       </Head>
-      <Navbar contact={"font-bold text-blue-500"} extra={""} />
+      <Navbar />
       <div className="flex flex-col px-6 md:w-4/5 my-12 m-auto">
         <h1 className="font-extrabold text-xl md:text-4xl text-black">
           Contact

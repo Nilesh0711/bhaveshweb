@@ -17,7 +17,7 @@ const Home = () => {
         <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
         <link rel="shortcut icon" href="/favicon/favicon.ico" />
       </Head>
-      <Navbar home={"font-bold text-blue-500"} extra={""} />
+      <Navbar />
       <main id="main-content" className="relative grow gradient-bg-services">
         <Welcome />
         <Gallery />
@@ -39,11 +39,11 @@ const Welcome = () => {
           I am Bhavesh Gupta, a research scholar in the Physics Department at
           IIT Madras.
           <br /> To know more, visit my
-          <Link className="italic text-blue-600 font-semibold "href="./about">
+          <Link className="italic text-blue-600 font-semibold "href="/about">
           {" "}about{" "}
-          </Link>
+          </Link>{" "}
           page for more information. To get in touch, visit the
-          <Link className="italic text-blue-600 font-semibold "href="./contact">
+          <Link className="italic text-blue-600 font-semibold "href="/contact">
           {" "}contact{" "}
           </Link>
         </div>

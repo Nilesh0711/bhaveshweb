@@ -1,0 +1,37 @@
+[
+  {
+    "title": "Purpose",
+    "items": [
+      {
+        "key": "Purpose",
+        "value": "Techniques that estimate and mitigate errors without fully correcting."
+      }
+    ]
+  },
+  {
+    "title": "QuantumDynamicalDecoupling",
+    "items": [
+      {
+        "key": "Purpose",
+        "value": "Aim to isolate the quantum system from its environment, reducing the impact of external noise."
+      },
+      {
+        "key": "Approach",
+        "value": "By applying sequences of carefully timed pulses, the quantum system's evolution can be decoupled from its surroundings, minimizing errors caused by environmental interactions."
+      }
+    ]
+  },
+  {
+    "title": "HamiltonianEngineering",
+    "items": [
+      {
+        "key": "Purpose",
+        "value": "Manipulating the system's Hamiltonian to suppress certain types of errors."
+      },
+      {
+        "key": "Approach",
+        "value": "Adjusting the parameters to make it less sensitive to specific error sources, thereby reducing the likelihood of errors during computation."
+      }
+    ]
+  }
+]

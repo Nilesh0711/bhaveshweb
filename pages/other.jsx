@@ -23,7 +23,7 @@ const Other = (props) => {
         <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
         <link rel="shortcut icon" href="/favicon/favicon.ico" />
       </Head>
-      <Navbar other={"font-bold text-blue-500"} extra={""} />
+      <Navbar />
       <main>
         <div className="flex flex-col px-6 md:w-4/5 mt-12 m-auto">
           <h1 className="font-extrabold text-xl text-black md:text-4xl">
