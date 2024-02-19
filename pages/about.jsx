@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Link from "next/link";
+import Image from "next/image";
 
 import Navbar from "../components/navbar";
 import Footer from "../components/footer";
@@ -215,16 +216,18 @@ const PhotoImage = () => {
   return (
     <>
       <header className="flex flex-col items-center mx-auto justify-center mt-10 mb-10 md:mb-20 md:my-20">
-        <ImageLoader
-          mainImageSrc={
-            "https://drive.google.com/uc?export=view&id=1jG6V7tSpO2U3Xq9G5HsLKiuO8i1Voxmr"
-          }
-          altImageSrc={"/img/loading.jpg"}
-          altText={"image"}
-          classValue={
-            "object-cover object-center mb-2 rounded-md w-4/5 h-[550px]"
-          }
-        />
+        <div className="md:w-4/5 md:h-[550px] h-[350px] w-[300px]">
+          <ImageLoader
+            mainImageSrc={
+              "https://drive.google.com/uc?export=view&id=1jG6V7tSpO2U3Xq9G5HsLKiuO8i1Voxmr"
+            }
+            altImageSrc={"/img/loading.jpg"}
+            altText={"image"}
+            classValue={
+              "object-cover object-center mb-2 rounded-md"
+            }
+          />
+        </div>
         <article className="text-center">
           <div className="text-4xl my-4 text-black font-extrabold ">
             Bhavesh Gupta

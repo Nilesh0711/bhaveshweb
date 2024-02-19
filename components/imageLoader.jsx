@@ -1,21 +1,34 @@
+import Image from "next/image";
 import React, { useState, useEffect } from "react";
 
 const ImageLoader = ({ mainImageSrc, altImageSrc, altText, classValue }) => {
-  const [imageSrc, setImageSrc] = useState(altImageSrc);
-  const [animate, setanimate] = useState("animate-pulse");
+  const [imageLoaded, setImageLoaded] = useState(false);
 
-  useEffect(() => {
-    const image = new Image();
-    image.src = mainImageSrc;
 
-    image.onload = () => {
-      setImageSrc(mainImageSrc);
-      setanimate("");
-    };
-  }, [mainImageSrc]);
+  const handleImageLoad = () => {
+    setImageLoaded(true);
+  };
 
   return (
-    <img src={imageSrc} className={`${classValue} ${animate}`} alt={altText} />
+    <div className="w-full h-full">
+      {!imageLoaded && altImageSrc && (
+        <img
+          src={altImageSrc}
+          alt={altText}
+          className={`w-full h-full animate-pulse ${classValue}`}
+          loading="lazy"
+        />
+      )}
+      <Image
+        src={mainImageSrc}
+        alt={altText}
+        width={1000000}
+        height={1000000}
+        className={`w-full h-full ${classValue} ${imageLoaded ? "" : "hidden"}`}
+        loading="eager"
+        onLoad={handleImageLoad}
+      />
+    </div>
   );
 };
 
