@@ -150,9 +150,9 @@ const WorshopAttendent = () => {
           <div className="font-bold text-lg px-4 md:text-3xl text-black">
             Workshop Attendent
           </div>
-          <div className="overflow-x-auto relative my-6">
-            <table className="w-full text-md text-left text-gray-500 dark:text-gray-400">
-              <thead className="text-xs uppercase bg-gray- bg-gray-700 text-white">
+          <div className="relative overflow-x-auto my-6">
+            <table className="w-full text-sm text-left rtl:text-right text-gray-400">
+              <thead className="text-xs uppercase bg-gray-700 text-gray-400">
                 <tr>
                   <th scope="col" className="py-3 px-6">
                     Name
@@ -169,7 +169,7 @@ const WorshopAttendent = () => {
                 </tr>
               </thead>
               <tbody>
-                <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                <tr className="border-b bg-gray-800 border-gray-700">
                   <th
                     scope="row"
                     className="py-4 px-6 font-medium whitespace-nowrap text-white"
@@ -183,7 +183,7 @@ const WorshopAttendent = () => {
                   <td className="py-4 px-6 text-white"> Offline </td>
                   <td className="py-4 px-6 text-white">IIT Madras</td>
                 </tr>
-                <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                <tr className="border-b bg-gray-800 border-gray-700">
                   <th
                     scope="row"
                     className="py-4 px-6 font-medium whitespace-nowrap text-white"
@@ -214,9 +214,9 @@ const ConferenceAttendent = () => {
           <div className="font-bold px-4 text-lg md:text-3xl text-black">
             Conference Attendent
           </div>
-          <div className="overflow-x-auto relative my-6">
-            <table className="w-full text-md text-left text-gray-500 dark:text-gray-400">
-              <thead className="text-xs uppercase bg-gray- bg-gray-700 text-white">
+          <div className="relative overflow-x-auto my-6">
+            <table className="w-full text-sm text-left rtl:text-right text-gray-400">
+              <thead className="text-xs uppercase bg-gray-700 text-gray-400">
                 <tr>
                   <th scope="col" className="py-3 px-6">
                     Name
@@ -233,7 +233,7 @@ const ConferenceAttendent = () => {
                 </tr>
               </thead>
               <tbody>
-                <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                <tr className="border-b bg-gray-800 border-gray-700">
                   <th
                     scope="row"
                     className="py-4 px-6 font-medium whitespace-nowrap text-white"
@@ -355,7 +355,6 @@ const SemesterButton = (props) => {
 
   const handleClick = (e) => {
     e.preventDefault();
-    // window.scrollTo(0, 0);
     $("html, body").animate({ scrollTop: 0 }, "slow");
     props.showAlert(e);
   };

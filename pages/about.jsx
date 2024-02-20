@@ -1,6 +1,5 @@
 import Head from "next/head";
 import Link from "next/link";
-import Image from "next/image";
 
 import Navbar from "../components/navbar";
 import Footer from "../components/footer";
@@ -224,7 +223,7 @@ const PhotoImage = () => {
             altImageSrc={"/img/loading.jpg"}
             altText={"image"}
             classValue={
-              "object-cover object-center mb-2 rounded-md"
+              "object-cover object-center mb-2 rounded-md w-full h-full"
             }
           />
         </div>
