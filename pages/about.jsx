@@ -218,7 +218,7 @@ const PhotoImage = () => {
         <div className="md:w-4/5 md:h-[550px] h-[350px] w-[300px]">
           <ImageLoader
             mainImageSrc={
-              "https://drive.google.com/uc?export=view&id=1jG6V7tSpO2U3Xq9G5HsLKiuO8i1Voxmr"
+              "https://utfs.io/f/0220a643-b56b-4fbf-a72c-d2a8361b9f6b-bx0u5o.jpeg"
             }
             altImageSrc={"/img/loading.jpg"}
             altText={"image"}

@@ -15,14 +15,7 @@ const ImageLoader = ({ mainImageSrc, altImageSrc, altText, classValue }) => {
   }, [mainImageSrc]);
 
   return (
-    <div className="w-full h-full">
-      <img
-        src={imageSrc}
-        className={`${classValue} ${animate}`}
-        alt={altText}
-        referrerPolicy="no-referrer"
-      />
-    </div>
+    <img src={imageSrc} className={`${classValue} ${animate}`} alt={altText} />
   );
 };
 

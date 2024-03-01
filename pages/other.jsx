@@ -75,7 +75,7 @@ const Gallery1 = ({ gallery1Data }) => {
               <div className="flex flex-wrap w-1/2">
                 <div className="md:p-2 p-1 w-1/2">
                   <ImageLoader
-                    mainImageSrc={`https://drive.google.com/uc?export=view&id=${gallery1Data[0].img1}`}
+                    mainImageSrc={gallery1Data[0].img1}
                     altImageSrc={"/img/loading.jpg"}
                     altText={"image"}
                     classValue={
@@ -85,7 +85,7 @@ const Gallery1 = ({ gallery1Data }) => {
                 </div>
                 <div className="md:p-2 p-1 w-1/2">
                   <ImageLoader
-                    mainImageSrc={`https://drive.google.com/uc?export=view&id=${gallery1Data[0].img2}`}
+                    mainImageSrc={gallery1Data[0].img2}
                     altImageSrc={"/img/loading.jpg"}
                     altText={"image"}
                     classValue={
@@ -95,7 +95,7 @@ const Gallery1 = ({ gallery1Data }) => {
                 </div>
                 <div className="md:p-2 p-1 w-full">
                   <ImageLoader
-                    mainImageSrc={`https://drive.google.com/uc?export=view&id=${gallery1Data[0].img3}`}
+                    mainImageSrc={gallery1Data[0].img3}
                     altImageSrc={"/img/loading.jpg"}
                     altText={"image"}
                     classValue={
@@ -107,7 +107,7 @@ const Gallery1 = ({ gallery1Data }) => {
               <div className="flex flex-wrap w-1/2">
                 <div className="md:p-2 p-1 w-full">
                   <ImageLoader
-                    mainImageSrc={`https://drive.google.com/uc?export=view&id=${gallery1Data[0].img4}`}
+                    mainImageSrc={gallery1Data[0].img4}
                     altImageSrc={"/img/loading.jpg"}
                     altText={"image"}
                     classValue={
@@ -117,7 +117,7 @@ const Gallery1 = ({ gallery1Data }) => {
                 </div>
                 <div className="md:p-2 p-1 w-1/2">
                   <ImageLoader
-                    mainImageSrc={`https://drive.google.com/uc?export=view&id=${gallery1Data[0].img5}`}
+                    mainImageSrc={gallery1Data[0].img5}
                     altImageSrc={"/img/loading.jpg"}
                     altText={"image"}
                     classValue={
@@ -127,7 +127,7 @@ const Gallery1 = ({ gallery1Data }) => {
                 </div>
                 <div className="md:p-2 p-1 w-1/2">
                   <ImageLoader
-                    mainImageSrc={`https://drive.google.com/uc?export=view&id=${gallery1Data[0].img6}`}
+                    mainImageSrc={gallery1Data[0].img6}
                     altImageSrc={"/img/loading.jpg"}
                     altText={"image"}
                     classValue={
@@ -169,7 +169,7 @@ const Gallery2 = ({ gallery2Data }) => {
               <div className="flex flex-wrap w-1/2">
                 <div className="md:p-2 p-1 w-1/2">
                   <ImageLoader
-                    mainImageSrc={`https://drive.google.com/uc?export=view&id=${gallery2Data[0].img1}`}
+                    mainImageSrc={gallery2Data[0].img1}
                     altImageSrc={"/img/loading.jpg"}
                     altText={"image"}
                     classValue={
@@ -179,7 +179,7 @@ const Gallery2 = ({ gallery2Data }) => {
                 </div>
                 <div className="md:p-2 p-1 w-1/2">
                   <ImageLoader
-                    mainImageSrc={`https://drive.google.com/uc?export=view&id=${gallery2Data[0].img2}`}
+                    mainImageSrc={gallery2Data[0].img2}
                     altImageSrc={"/img/loading.jpg"}
                     altText={"image"}
                     classValue={
@@ -189,7 +189,7 @@ const Gallery2 = ({ gallery2Data }) => {
                 </div>
                 <div className="md:p-2 p-1 w-full">
                   <ImageLoader
-                    mainImageSrc={`https://drive.google.com/uc?export=view&id=${gallery2Data[0].img3}`}
+                    mainImageSrc={gallery2Data[0].img3}
                     altImageSrc={"/img/loading.jpg"}
                     altText={"image"}
                     classValue={
@@ -201,7 +201,7 @@ const Gallery2 = ({ gallery2Data }) => {
               <div className="flex flex-wrap w-1/2">
                 <div className="md:p-2 p-1 w-full">
                   <ImageLoader
-                    mainImageSrc={`https://drive.google.com/uc?export=view&id=${gallery2Data[0].img4}`}
+                    mainImageSrc={gallery2Data[0].img4}
                     altImageSrc={"/img/loading.jpg"}
                     altText={"image"}
                     classValue={
@@ -211,7 +211,7 @@ const Gallery2 = ({ gallery2Data }) => {
                 </div>
                 <div className="md:p-2 p-1 w-1/2">
                   <ImageLoader
-                    mainImageSrc={`https://drive.google.com/uc?export=view&id=${gallery2Data[0].img5}`}
+                    mainImageSrc={gallery2Data[0].img5}
                     altImageSrc={"/img/loading.jpg"}
                     altText={"image"}
                     classValue={
@@ -221,7 +221,7 @@ const Gallery2 = ({ gallery2Data }) => {
                 </div>
                 <div className="md:p-2 p-1 w-1/2">
                   <ImageLoader
-                    mainImageSrc={`https://drive.google.com/uc?export=view&id=${gallery2Data[0].img6}`}
+                    mainImageSrc={gallery2Data[0].img6}
                     altImageSrc={"/img/loading.jpg"}
                     altText={"image"}
                     classValue={
@@ -248,7 +248,7 @@ const Gallery3 = ({ gallery3Data }) => {
               <div className="flex flex-wrap w-1/2">
                 <div className="md:p-2 p-1 w-1/2">
                   <ImageLoader
-                    mainImageSrc={`https://drive.google.com/uc?export=view&id=${gallery3Data[0].img1}`}
+                    mainImageSrc={gallery3Data[0].img1}
                     altImageSrc={"/img/loading.jpg"}
                     altText={"image"}
                     classValue={
@@ -258,7 +258,7 @@ const Gallery3 = ({ gallery3Data }) => {
                 </div>
                 <div className="md:p-2 p-1 w-1/2">
                   <ImageLoader
-                    mainImageSrc={`https://drive.google.com/uc?export=view&id=${gallery3Data[0].img2}`}
+                    mainImageSrc={gallery3Data[0].img2}
                     altImageSrc={"/img/loading.jpg"}
                     altText={"image"}
                     classValue={
@@ -268,7 +268,7 @@ const Gallery3 = ({ gallery3Data }) => {
                 </div>
                 <div className="md:p-2 p-1 w-full">
                   <ImageLoader
-                    mainImageSrc={`https://drive.google.com/uc?export=view&id=${gallery3Data[0].img3}`}
+                    mainImageSrc={gallery3Data[0].img3}
                     altImageSrc={"/img/loading.jpg"}
                     altText={"image"}
                     classValue={
@@ -280,7 +280,7 @@ const Gallery3 = ({ gallery3Data }) => {
               <div className="flex flex-wrap w-1/2">
                 <div className="md:p-2 p-1 w-full">
                   <ImageLoader
-                    mainImageSrc={`https://drive.google.com/uc?export=view&id=${gallery3Data[0].img4}`}
+                    mainImageSrc={gallery3Data[0].img4}
                     altImageSrc={"/img/loading.jpg"}
                     altText={"image"}
                     classValue={
@@ -290,7 +290,7 @@ const Gallery3 = ({ gallery3Data }) => {
                 </div>
                 <div className="md:p-2 p-1 w-1/2">
                   <ImageLoader
-                    mainImageSrc={`https://drive.google.com/uc?export=view&id=${gallery3Data[0].img5}`}
+                    mainImageSrc={gallery3Data[0].img5}
                     altImageSrc={"/img/loading.jpg"}
                     altText={"image"}
                     classValue={
@@ -300,7 +300,7 @@ const Gallery3 = ({ gallery3Data }) => {
                 </div>
                 <div className="md:p-2 p-1 w-1/2">
                   <ImageLoader
-                    mainImageSrc={`https://drive.google.com/uc?export=view&id=${gallery3Data[0].img6}`}
+                    mainImageSrc={gallery3Data[0].img6}
                     altImageSrc={"/img/loading.jpg"}
                     altText={"image"}
                     classValue={
@@ -327,7 +327,7 @@ const Gallery4 = ({ gallery4Data }) => {
               <div className="flex flex-wrap w-1/2">
                 <div className="md:p-2 p-1 w-1/2">
                   <ImageLoader
-                    mainImageSrc={`https://drive.google.com/uc?export=view&id=${gallery4Data[0].img1}`}
+                    mainImageSrc={gallery4Data[0].img1}
                     altImageSrc={"/img/loading.jpg"}
                     altText={"image"}
                     classValue={
@@ -337,7 +337,7 @@ const Gallery4 = ({ gallery4Data }) => {
                 </div>
                 <div className="md:p-2 p-1 w-1/2">
                   <ImageLoader
-                    mainImageSrc={`https://drive.google.com/uc?export=view&id=${gallery4Data[0].img2}`}
+                    mainImageSrc={gallery4Data[0].img2}
                     altImageSrc={"/img/loading.jpg"}
                     altText={"image"}
                     classValue={
@@ -347,7 +347,7 @@ const Gallery4 = ({ gallery4Data }) => {
                 </div>
                 <div className="md:p-2 p-1 w-full">
                   <ImageLoader
-                    mainImageSrc={`https://drive.google.com/uc?export=view&id=${gallery4Data[0].img3}`}
+                    mainImageSrc={gallery4Data[0].img3}
                     altImageSrc={"/img/loading.jpg"}
                     altText={"image"}
                     classValue={
@@ -359,7 +359,7 @@ const Gallery4 = ({ gallery4Data }) => {
               <div className="flex flex-wrap w-1/2">
                 <div className="md:p-2 p-1 w-full">
                   <ImageLoader
-                    mainImageSrc={`https://drive.google.com/uc?export=view&id=${gallery4Data[0].img4}`}
+                    mainImageSrc={gallery4Data[0].img4}
                     altImageSrc={"/img/loading.jpg"}
                     altText={"image"}
                     classValue={
@@ -369,7 +369,7 @@ const Gallery4 = ({ gallery4Data }) => {
                 </div>
                 <div className="md:p-2 p-1 w-1/2">
                   <ImageLoader
-                    mainImageSrc={`https://drive.google.com/uc?export=view&id=${gallery4Data[0].img5}`}
+                    mainImageSrc={gallery4Data[0].img5}
                     altImageSrc={"/img/loading.jpg"}
                     altText={"image"}
                     classValue={
@@ -379,7 +379,7 @@ const Gallery4 = ({ gallery4Data }) => {
                 </div>
                 <div className="md:p-2 p-1 w-1/2">
                   <ImageLoader
-                    mainImageSrc={`https://drive.google.com/uc?export=view&id=${gallery4Data[0].img6}`}
+                    mainImageSrc={gallery4Data[0].img6}
                     altImageSrc={"/img/loading.jpg"}
                     altText={"image"}
                     classValue={

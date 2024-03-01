@@ -2,7 +2,7 @@
   {
     "title": "Noise-Adapted Quantum Error Correction to Adiabatic Quantum Computation",
     "description": "<div> Active error correction for Pauli noise and Amplitude damping (non-Pauli error) for 2-local universal adiabatic quantum computation. Renormalising the system-bath coupling results error suppression. But, coupling <span className='text-red-600'>cannot be eliminated completely</span> without using an infinite amount of energy. Ex: DD pulses applied at an infinitely <span className='underline'>high frequency</span> or an infinite <span className='underline'>strong EGP</span> Hamiltonian. Since, our <span className='text-red-600'>resources are finite.</span> Physical error will accumulate over long time scales eventually causing <span className='underline'>logical errors!</span> We can use classical post-processing, but as errors <span className='text-red-600'>accumulate more</span>, it results in <span className='text-red-600'>Computation fails!</span></div>",
-    "image": "1Bq9W2oOPDNhkkQ0Mlye6ZPGvW-sOX-Ok"
+    "image": "https://utfs.io/f/2d318cbf-71b2-44d8-9f06-705b3d1bf4bd-ftirxl.png"
   },
   {
     "title": "Quantum adiabatic factoring algorithm design using reinforcement learning",
@@ -12,7 +12,7 @@
   {
     "title": "Noise Spectroscopy of IBM Superconducting Qubits",
     "description": "",
-    "image": "1CCmDggKRkDdCs2yriQcucxtLjH9-khre"
+    "image": "https://utfs.io/f/4e1c6370-f1e0-44b5-91cb-d265b755c536-ftirxm.png"
   },
   {
     "title": "Finding near Optimal Dynamical Decoupling protocol using Machine Learning to suppress Noises in IBM Qubits ",

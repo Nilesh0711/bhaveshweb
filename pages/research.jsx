@@ -72,7 +72,7 @@ const LoadImage = () => {
       <div className="m-auto">
         <ImageLoader
           mainImageSrc={
-            "https://drive.google.com/uc?export=view&id=1sg1_jMC-tumiXq2ug83veDItisqVTI05"
+            "https://utfs.io/f/205fad92-2999-4dd1-ac0c-5161a0b5c66a-f0oqnc.png"
           }
           altImageSrc={"/img/loading.jpg"}
           altText={"image"}
@@ -80,7 +80,7 @@ const LoadImage = () => {
         />
         <ImageLoader
           mainImageSrc={
-            "https://drive.google.com/uc?export=view&id=10sct43Bv2QdRAouOoUXaNMmAX2Sq_nEp"
+            "https://utfs.io/f/4fc221f3-dcb6-4bd9-97a3-aea4e840e295-f0oqnb.png"
           }
           altImageSrc={"/img/loading.jpg"}
           altText={"image"}

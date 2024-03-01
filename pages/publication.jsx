@@ -56,7 +56,7 @@ const Publications = (props) => {
                       />
                       {isImage && (
                         <ImageLoader
-                          mainImageSrc={`https://drive.google.com/uc?export=view&id=${e.image}`}
+                          mainImageSrc={e.image}
                           altImageSrc={"/img/loading.jpg"}
                           altText={"image"}
                           classValue={
