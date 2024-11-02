@@ -218,7 +218,7 @@ const PhotoImage = () => {
         <div className="md:w-4/5 md:h-[550px] h-[350px] w-[300px]">
           <ImageLoader
             mainImageSrc={
-              "https://utfs.io/f/0220a643-b56b-4fbf-a72c-d2a8361b9f6b-bx0u5o.jpeg"
+              "https://utfs.io/f/YRpu8I8npquVOrhEcg27ZYkHzDtxsnuVRyNcEmQw3p6gAfvb"
             }
             altImageSrc={"/img/loading.jpg"}
             altText={"image"}
