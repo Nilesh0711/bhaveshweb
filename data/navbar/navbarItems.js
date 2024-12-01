@@ -28,10 +28,10 @@ const navbarItems = [
       title: "Contact",
       pathName: "/contact/",
     },
-    {
-      title: "Other",
-      pathName: "/other/",
-    },
+    // {
+    //   title: "Other",
+    //   pathName: "/other/",
+    // },
   ];
   
   export default navbarItems;

@@ -56,6 +56,7 @@ const Publications = (props) => {
                       />
                       {isImage && (
                         <ImageLoader
+                        buttonReq={true}
                           mainImageSrc={e.image}
                           altImageSrc={"/img/loading.jpg"}
                           altText={"image"}

@@ -54,6 +54,7 @@ const Research = () => {
           </h1>
           <Motivation />
           <LoadImage />
+          <Motivation2 />
           <hr className="mt-16 mx-auto w-48 h-1 bg-gray-900 rounded border-0"></hr>
         </div>
         <ProgressReport showAlert={showAlert} />
@@ -86,6 +87,91 @@ const LoadImage = () => {
           altText={"image"}
           classValue={"object-cover object-center w-full h-full my-2"}
         />
+      </div>
+    </>
+  );
+};
+
+const Motivation2 = () => {
+  return (
+    <>
+      <div className="font-bold text-xl md:text-3xl text-black text-center my-6 mt-12">
+        Expedited Noise Spectroscopy
+      </div>
+      <div className="md:my-6 text-justify text-gray-600 md:grid grid-cols-2 gap-x-10">
+        <p className="md:text-lg text-base">
+          <strong className="text-blue-600 text-lg md:text-2xl">
+            Decoherence is the
+          </strong>{" "}
+          uncontrolled interaction between system - environment degrees of
+          freedom. For large scale quantum computation, developing robust
+          quantum control techniques to mitigate the decoherence is imperative.
+          For this, isolating the qubit from it’s environment is key.
+          Understanding the spectrum of noise acting on a qubit can yield
+          valuable information about its environment, as it crucially underpins
+          the optimization of novel DD protocols that can mitigate such noise.
+          In practice, the experimental noise spectrum varies significantly
+          between different qubits in non-trivial ways to predict or accurately
+          extract from the most common measurements. As a result, it is
+          difficult to predict a priori which of the several possible DD
+          protocols would provide optimal suppression of decoherence. Indeed,
+          one could imagine constructing a decoupling protocol customized for a
+          particular qubit, but this is only possible by knowing the actual
+          qubit noise spectrum with sufficient accuracy. Also, it would be worth
+          emphasizing that the knowledge of an obscured qubit environment is a
+          valuable outcome of precise noise spectroscopy. As the number of
+          qubits in a quantum computer grows, the complexity of the noise
+          environment also increases. Rapid noise characterization techniques
+          have become even more critical for managing these large-scale systems.
+          Dynamical decoupling relies on tailoring pulse sequences to counteract
+          specific noise frequencies. Rapid noise spectrum extraction allows for
+          faster iteration and optimization of these protocols. It accelerates
+          the development of robust quantum algorithms that enable real-time
+          adjustments to error correction strategies based on the current noise
+          environment. However, using standard methods, extracting accurate
+          noise spectra from typical time dynamics measurements on qubits is
+          intractable. Extracting the noise spectra rapidly for qubits presents
+          several challenges. Conventional long-duration noise spectroscopy
+          protocols require extended measurement times. These long measurement
+          times contribute to decoherence, altering the noise they are trying to
+          measure. The measured noise spectrum ends up being a distorted
+          representation of the actual noise affecting the qubit.
+        </p>{" "}
+        <p className="text-base md:text-lg mt-10 md:mt-0">
+          {" "}
+          There are various sources of noise, each with varying frequencies and
+          characteristics. Thus, our methods must be sensitive enough to capture
+          this complexity without sacrificing speed. Many traditional methods
+          prioritize accuracy over speed, requiring extensive data collection
+          and analysis. Achieving rapid extraction often compromises the level
+          of detail captured in the noise spectrum. This trade-off can limit the
+          effectiveness of the extracted data for optimizing error correction
+          protocols. Noise can fluctuate over time; this time dependence on
+          noise creates problems for lengthy noise spectroscopy protocols,
+          making them unsuitable for accurately characterizing the qubit’s noise
+          environment. To practical achieve fault-tolerant quantum computing ,
+          where errors can be effectively corrected, we need a deep
+          understanding of the specific noise affecting the qubits, and rapid
+          extraction of noise spectra becomes an imperative tool for overcoming
+          noise challenges. Significant advances have been made in machine
+          learning and specifically deep learning techniques, for example, in
+          the fields of computer vision and natural language processing, and
+          more recently, they have been applied to problems in physics and
+          quantum engineering. Here, we propose to address this challenge of
+          rapid noise spectroscopy using deep learning algorithms, motivated by
+          past work on NV center qubits, a neural network-based methodology that
+          allows for the extraction of the noise spectrum associated with any
+          qubit surrounded by an arbitrary bath, with significantly greater
+          accuracy than the current methods. While promising for rapid
+          extraction, deep learning approaches require significant training
+          data. Gathering this data can be time-consuming, especially for
+          diverse noise environments. Our protocol effectively and efficiently
+          addresses the challenges in accurately extracting qubit noise spectra
+          from coherence decay measurements to understand and mitigate qubit
+          noise environments and also outperforms conventional methods. This
+          enables the customization of optimal DD protocols and improves the
+          robustness of quantum control operations.
+        </p>
       </div>
     </>
   );
@@ -244,6 +330,29 @@ const ConferenceAttendent = () => {
                   <td className="py-4 px-6 text-white">Offline</td>
                   <td className="py-4 px-6 text-white">IIT Madras</td>
                 </tr>
+                <tr className="border-b bg-gray-800 border-gray-700">
+                  <th
+                    scope="row"
+                    className="py-4 px-6 font-medium whitespace-nowrap text-white"
+                  >
+                    International Conference on Quantum Communication,
+                    Measurement and Computing
+                  </th>
+                  <td className="py-4 px-6 text-white">26-30 August 2024</td>
+                  <td className="py-4 px-6 text-white">Offline</td>
+                  <td className="py-4 px-6 text-white">IIT Madras</td>
+                </tr>
+                <tr className="border-b bg-gray-800 border-gray-700">
+                  <th
+                    scope="row"
+                    className="py-4 px-6 font-medium whitespace-nowrap text-white"
+                  >
+                    Quantum Technology International Conference
+                  </th>
+                  <td className="py-4 px-6 text-white">10-12 September 2024</td>
+                  <td className="py-4 px-6 text-white">Offline</td>
+                  <td className="py-4 px-6 text-white">University of Berlin</td>
+                </tr>
               </tbody>
             </table>
           </div>
@@ -299,7 +408,9 @@ const ProgressReport = ({ showAlert }) => {
               />
               <SemesterButton
                 title={"Semester 4"}
-                link={""}
+                link={
+                  "https://drive.google.com/file/d/1GonBXhON-tcV0LbzmyZ6TuLk1LktrB9x/view?pli=1"
+                }
                 showAlert={showAlert}
               />
               <SemesterButton

@@ -37,7 +37,7 @@ const About = (props) => {
         <link rel="shortcut icon" href="/favicon/favicon.ico" />
       </Head>
       <Navbar />
-      <main className="gradient-bg-services">
+      <main>
         <div className="md:grid grid-cols-3 md:w-4/5 mx-auto">
           <section className="flex flex-col mx-auto md:order-last col-span-2 md:col-span-1">
             <PhotoImage />
@@ -131,8 +131,8 @@ const PositionResponsibility = ({ responsibilityData }) => {
           return (
             <section key={index} className="text-base">
               <ul className="list-disc text-gray-700 text-base md:text-lg space-y-4 md:mx-3 list-inside">
-                <li>
-                  <span className="font-bold text-black">{e.head} </span>
+                <li className="my-2">
+                  <span className="font-bold text-gray-700">{e.head} </span>
                   <span className="text-md">{e.content}</span>
                   {link != "" && (
                     <span>
