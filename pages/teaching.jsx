@@ -36,7 +36,7 @@ const Teaching = (props) => {
           <h1 className="font-extrabold text-xl md:text-4xl text-black">
             My Teaching Activities
           </h1>
-          <div className="info md:mt-20 my-10 md:w-1/2 text-black">
+          <div className="info md:mt-20 my-10 md:w-10/12 text-black">
             <section>
               <div className="mt-16 text-lg md:text-2xl font-bold">
                 PMRF TA work for NPTEL
@@ -44,7 +44,7 @@ const Teaching = (props) => {
 
               <div className="mt-12">
                 {pmrfTaData.map((e, index) => {
-                  let link = e.link.length != 0 ? true : false;
+                  // let link = e.link.length != 0 ? true : false;
                   return (
                     <section key={index} className="text-base">
                       <ul className="list-disc text-gray-700 text-base md:text-lg space-y-4 md:mx-3 mt-5">
@@ -53,14 +53,14 @@ const Teaching = (props) => {
                             {e.head}{" "}
                           </span>
                           <span className="text-md">{e.content}</span>
-                          {link != "" && (
+                          {/* {link != "" && (
                             <span>
                               <Link href={e.link}>
                                 {" "}
                                 <FaFilePdf className="inline pointer mb-1 ml-1 text-blue-500" />
                               </Link>
                             </span>
-                          )}
+                          )} */}
                         </li>
                       </ul>
                     </section>
@@ -75,7 +75,7 @@ const Teaching = (props) => {
               </div>
               <div className="mt-12">
                 {responsibilityData.map((e, index) => {
-                  let link = e.link.length != 0 ? true : false;
+                  // let link = e.link.length != 0 ? true : false;
                   return (
                     <section key={index} className="text-base">
                       <ul className="list-disc text-gray-700 text-base md:text-lg space-y-4 md:mx-3 mt-5">
@@ -84,14 +84,14 @@ const Teaching = (props) => {
                             {e.head}{" "}
                           </span>
                           <span className="text-md">{e.content}</span>
-                          {link != "" && (
+                          {/* {link != "" && (
                             <span>
                               <Link href={e.link}>
                                 {" "}
                                 <FaFilePdf className="inline pointer mb-1 ml-1 text-blue-500" />
                               </Link>
                             </span>
-                          )}
+                          )} */}
                         </li>
                       </ul>
                     </section>
@@ -136,10 +136,11 @@ const Teaching = (props) => {
         <YoutubeAndDrive />
       </div>
 
-      <div className="gradient-bg-footer">
+      <div className="gradient-bg-footer pt-24">
         <Footer />
       </div>
     </div>
+    
   );
 };
 

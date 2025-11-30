@@ -10,21 +10,13 @@ const Footer = () => {
             href="/"
             className="self-center text-2xl font-semibold whitespace-nowrap text-white"
           >
-            Bhavesh
+            Bhavesh Gupta
           </Link>
           <ul className="flex flex-wrap items-center mb-6 text-sm sm:mb-0 text-gray-400">
             <li>
               <Link href="/about" className="mr-4 hover:underline md:mr-6 ">
                 About
               </Link>
-            </li>
-            <li>
-              <p className="mr-4 hover:underline md:mr-6">Privacy Policy</p>
-            </li>
-            <li>
-              <p href="" className="mr-4 hover:underline md:mr-6 ">
-                Licensing
-              </p>
             </li>
             <li>
               <Link href="/contact" className="hover:underline">
@@ -35,7 +27,7 @@ const Footer = () => {
         </div>
         <hr className="my-6 border-gray-200 sm:mx-auto lg:my-8" />
         <span className="block text-sm sm:text-center text-gray-400">
-          © 2022 . All Rights Reserved.
+          Last updated: 30 November 2025
         </span>
       </footer>
     </div>

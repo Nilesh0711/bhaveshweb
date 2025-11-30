@@ -40,6 +40,7 @@ const Supervisor = () => {
           </div>
         </div>
       </main>
+      
 
       <Supervisor1 />
 
@@ -47,6 +48,7 @@ const Supervisor = () => {
 
       <div className="bg-gray-600 w-[90%] h-[1px] mx-auto my-6"></div>
 
+      <div className="mt-16"></div>
 
       <Supervisor2 />
 

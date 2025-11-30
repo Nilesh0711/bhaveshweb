@@ -1,5 +1,6 @@
 import React, { useState, useEffect, Fragment } from "react";
 import Head from "next/head";
+import * as fs from "node:fs/promises";
 import Navbar from "../components/navbar";
 import Footer from "../components/footer";
 import ImageLoader from "../components/imageLoader";
@@ -15,7 +16,9 @@ import {
 import { CgNotes } from "react-icons/cg";
 import Link from "next/link";
 
-const Research = () => {
+const Research = (props) => {
+  const published_data = props.published_data;
+
   const [alert, setAlert] = useState(false);
   const showAlert = () => {
     setAlert(true);
@@ -54,7 +57,56 @@ const Research = () => {
           </h1>
           <Motivation />
           <LoadImage />
-          <Motivation2 />
+
+          <div className="md:pt-12" />
+
+          <section className="info1">
+            <div>
+              <div className="list-decimal space-y-6  my-12 text-black md:mx-3">
+                <div className="text-xl font-bold">
+                  Noise-Adapted Quantum Error Correction to Adiabatic Quantum Computation
+                </div>
+                <div className="text-lg text-gray-600" > Active error correction for Pauli noise and Amplitude damping (non-Pauli error) for 2-local universal adiabatic quantum computation. Renormalising the system-bath coupling results error suppression. But, coupling <span className='text-red-600 '>cannot be eliminated completely</span> without using an infinite amount of energy. Ex: DD pulses applied at an infinitely <span className='underline'>high frequency</span> or an infinite <span className='underline'>strong EGP</span> Hamiltonian. Since, our <span className='text-red-600'>resources are finite.</span> Physical error will accumulate over long time scales eventually causing <span className='underline'>logical errors!</span> We can use classical post-processing, but as errors <span className='text-red-600'>accumulate more</span>, it results in <span className='text-red-600'>Computation fails!</span></div>
+                <div>
+                  <ImageLoader
+                    buttonReq={true}
+                    mainImageSrc="https://utfs.io/f/2d318cbf-71b2-44d8-9f06-705b3d1bf4bd-ftirxl.png"
+                    altImageSrc={"/img/loading.jpg"}
+                    altText={"image"}
+                    classValue={
+                      "object-cover object-center w-full h-full"
+                    }
+                  />
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <NoiseSpectroscopy published_data={published_data} />
+
+          <section className="info2">
+            <div>
+              <div className="list-decimal space-y-6  my-12 text-black md:mx-3">
+                <div className="text-xl font-bold">
+                  Finding near Optimal Dynamical Decoupling protocol using Machine Learning to suppress Noises in IBM Qubits
+                </div>
+                <div className="text-lg text-gray-600"> Robust isolation of a qubit from unwanted environmental noise is a critical factor in technologies such as quantum computers. Understanding the spectrum of noise acting on a qubit can yield valuable information about its environment and crucially underpins the optimization of dynamical decoupling protocols to mitigate such noise. To address this challenge we use deep-learning algorithms and demonstrate a neural-network-based methodology that extracts the noise spectrum associated with any qubit surrounded by an arbitrary bath. In practice, the experimental noise spectrum varies significantly between different qubits in ways that are non-trivial to either predict or, indeed, to extract from the most common measurements accurately. As a result, it is difficult to predict a priori which of the several possible dynamical decoupling protocols would provide optimal suppression of decoherence.</div>
+                <div>
+                  <ImageLoader
+                    buttonReq={true}
+                    mainImageSrc="https://utfs.io/f/YRpu8I8npquVWJ3Yh6HQRm9El2hsxXA8rJSPbT5FNjG1HdyL"
+                    altImageSrc={"/img/loading.jpg"}
+                    altText={"image"}
+                    classValue={
+                      "object-cover object-center w-full h-full"
+                    }
+                  />
+                </div>
+              </div>
+            </div>
+          </section>
+
+
           <hr className="mt-16 mx-auto w-48 h-1 bg-gray-900 rounded border-0"></hr>
         </div>
         <ProgressReport showAlert={showAlert} />
@@ -92,11 +144,11 @@ const LoadImage = () => {
   );
 };
 
-const Motivation2 = () => {
+const NoiseSpectroscopy = ({ published_data }) => {
   return (
     <>
       <div className="font-bold text-xl md:text-3xl text-black text-center my-6 mt-12">
-        Expedited Noise Spectroscopy
+        Noise Spectroscopy
       </div>
       <div className="md:my-6 text-justify text-gray-600 md:grid grid-cols-2 gap-x-10">
         <p className="md:text-lg text-base">
@@ -173,6 +225,56 @@ const Motivation2 = () => {
           robustness of quantum control operations.
         </p>
       </div>
+
+      <div className="my-6 px-2">
+        {/* PRINT ONCE */}
+        <p className="text-3xl font-bold">Published Article</p>
+
+        <div className="mt-6 space-y-12">
+          {published_data.map((e, index) => {
+            return (
+              <section key={index} className="space-y-3">
+
+                {/* Article Type + Journal */}
+                <div className="flex flex-wrap items-center gap-2 text-xs font-semibold tracking-wide uppercase text-gray-500">
+                  <span>{e.article}</span>
+                  <span className="h-3 w-px bg-gray-300" />
+                  <span className="text-sky-700">{e.journal}</span>
+                </div>
+
+                {/* Title */}
+                <p className="text-2xl font-semibold">
+                  {e.title}
+                </p>
+
+                {/* Authors */}
+                <p className="text-lg text-blue-600">
+                  {e.authors}
+                </p>
+
+                {/* Date + DOI */}
+                <p className="font-sans text-gray-600">
+                  First published:
+                  <span className="text-black"> {e.date} </span>
+                  <span className="text-gray-400 mx-1">|</span>
+
+                  <Link
+                    href={e.link}
+                    target="_blank"
+                    className="text-blue-800 underline underline-offset-2"
+                  >
+                    {e.doi}
+                  </Link>
+                </p>
+
+              </section>
+            );
+          })}
+        </div>
+      </div>
+
+
+
     </>
   );
 };
@@ -221,9 +323,9 @@ const WorkList = () => {
 
         <hr className="mt-16 md:mt-24 mx-auto w-48 h-1 bg-gray-900 rounded border-0"></hr>
 
-        <WorshopAttendent />
-        <ConferenceAttendent />
       </section>
+      <WorshopAttendent />
+      <ConferenceAttendent />
     </>
   );
 };
@@ -231,8 +333,8 @@ const WorkList = () => {
 const WorshopAttendent = () => {
   return (
     <>
-      <div className="flex flex-col md:px-6 px-2 md:w-4/5 mt-16 md:m-auto">
-        <div className="info md:my-10 my-10 md:w-4/5">
+      <div className="flex flex-col md:px-24 px-2 md:w-full mt-16 md:m-auto">
+        <div className="info md:my-10 my-10">
           <div className="font-bold text-lg px-4 md:text-3xl text-black">
             Workshop Attendent
           </div>
@@ -295,8 +397,8 @@ const WorshopAttendent = () => {
 const ConferenceAttendent = () => {
   return (
     <>
-      <div className="flex flex-col md:px-6 px-2 md:w-4/5 m-auto">
-        <div className="info md:w-4/5">
+      <div className="flex flex-col md:px-24 px-2 md:w-full mt-16 md:m-auto">
+        <div className="info2 md:my-10 my-10">
           <div className="font-bold px-4 text-lg md:text-3xl text-black">
             Conference Attendent
           </div>
@@ -352,6 +454,28 @@ const ConferenceAttendent = () => {
                   <td className="py-4 px-6 text-white">10-12 September 2024</td>
                   <td className="py-4 px-6 text-white">Offline</td>
                   <td className="py-4 px-6 text-white">University of Berlin</td>
+                </tr>
+                <tr className="border-b bg-gray-800 border-gray-700">
+                  <th
+                    scope="row"
+                    className="py-4 px-6 font-medium whitespace-nowrap text-white"
+                  >
+                    ICTS Quantum Trajectories 2025
+                  </th>
+                  <td className="py-4 px-6 text-white">20 January 2025 to 07 February 2025</td>
+                  <td className="py-4 px-6 text-white">Offline</td>
+                  <td className="py-4 px-6 text-white">ICTS Banglore</td>
+                </tr>
+                <tr className="border-b bg-gray-800 border-gray-700">
+                  <th
+                    scope="row"
+                    className="py-4 px-6 font-medium whitespace-nowrap text-white"
+                  >
+                    20th TQC Conference 2025
+                  </th>
+                  <td className="py-4 px-6 text-white">September  15th – 19th, 2025</td>
+                  <td className="py-4 px-6 text-white">Offline</td>
+                  <td className="py-4 px-6 text-white">IISc Banglore</td>
                 </tr>
               </tbody>
             </table>
@@ -415,17 +539,17 @@ const ProgressReport = ({ showAlert }) => {
               />
               <SemesterButton
                 title={"Semester 5"}
-                link={""}
+                link={"https://drive.google.com/file/d/1ksMy_JJyGas1v7szJXK6PyFT8Fc7X2BY/view?usp=share_link"}
                 showAlert={showAlert}
               />
               <SemesterButton
                 title={"Semester 6"}
-                link={""}
+                link={"https://drive.google.com/file/d/1N2zW_V7oRxdSnBs0Z1mynsT62kHm2bYW/view?usp=share_link"}
                 showAlert={showAlert}
               />
               <SemesterButton
                 title={"Semester 7"}
-                link={""}
+                link={"https://drive.google.com/file/d/1APBHRgpOxT2J1fdh5j6e6xiIaZR3GP1y/view?usp=share_link"}
                 showAlert={showAlert}
               />
               <SemesterButton
@@ -562,5 +686,16 @@ const Motivation = () => {
     </>
   );
 };
+
+export async function getStaticProps() {
+  let published_data = await fs.readFile(
+    "data/publication/published_article.json",
+    "utf-8"
+  );
+  published_data = JSON.parse(published_data);
+  return {
+    props: { published_data },
+  };
+}
 
 export default Research;

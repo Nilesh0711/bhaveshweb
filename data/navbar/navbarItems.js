@@ -12,10 +12,10 @@ const navbarItems = [
       title: "Research",
       pathName: "/research/",
     },
-    {
-      title: "Publication",
-      pathName: "/publication/",
-    },
+    // {
+    //   title: "Publication",
+    //   pathName: "/publication/",
+    // },
     {
       title: "Supervisor",
       pathName: "/supervisor/",

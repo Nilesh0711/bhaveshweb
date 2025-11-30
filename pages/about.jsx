@@ -54,7 +54,7 @@ const About = (props) => {
 
       <Ranking />
 
-      <PositionResponsibility responsibilityData={responsibilityData} />
+      {/* <PositionResponsibility responsibilityData={responsibilityData} /> */}
 
       <div className="pt-10 md:pt-32 gradient-bg-footer">
         <Footer />
@@ -163,7 +163,7 @@ const AboutInformation = () => {
           <div>Hi, I am Bhavesh. Again, welcome to my website.</div>
           <br />
           <div>
-            I am a second-year PhD in the
+            I am a PhD scholar in the
             <a
               target="_blank"
               className="italic text-blue-600 font-semibold"
@@ -198,7 +198,7 @@ const AboutInformation = () => {
           <br />
           <div className="md:text-lg text-base">
             In addition to my research endeavors, I actively engage in athletic
-            pursuits such as swimming and badminton. Furthermore, I demonstrate
+            pursuits such as swimming and tennis. Furthermore, I demonstrate
             a keen interest in the study of the equity market, consistently
             seeking to expand my understanding of financial dynamics and market
             trends.
