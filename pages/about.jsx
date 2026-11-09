@@ -33,7 +33,7 @@ const About = (props) => {
         <meta name="keywords" content="PMRF" />
         <meta name="keywords" content="IIT Madras" />
         <meta name="keywords" content="CQuICC" />
-        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+        <meta httpEquiv="Content-Type" content="text/html;charset=UTF-8" />
         <link rel="shortcut icon" href="/favicon/favicon.ico" />
       </Head>
       <Navbar />
@@ -442,12 +442,12 @@ export async function getStaticProps() {
   );
 
   let quantumMitigationData = await fs.readFile(
-    "data/about/quantum_correction.json",
+    "data/about/quantum_mitigation.json",
     "utf-8"
   );
 
   let quantumSuppressionData = await fs.readFile(
-    "data/about/quantum_correction.json",
+    "data/about/quantum_suppression.json",
     "utf-8"
   );
 

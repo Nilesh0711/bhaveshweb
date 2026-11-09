@@ -14,7 +14,7 @@ const Contact = () => {
         <meta name="keywords" content="PMRF" />
         <meta name="keywords" content="IIT Madras" />
         <meta name="keywords" content="CQuICC" />
-        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+        <meta httpEquiv="Content-Type" content="text/html;charset=UTF-8" />
         <link rel="shortcut icon" href="/favicon/favicon.ico" />
       </Head>
       <Navbar />
@@ -27,12 +27,11 @@ const Contact = () => {
             <div className="email">
               <strong>Email</strong> - I can be contacted via{" "}
               <span className="italic text-blue-600 font-bold">
-                <Link className="hover:bg-blue-600 hover:text-white hover:px-2 hover:py-1 hover:rounded-md" href="mailto:bhavesh@physics.iitm.ac.in
-">office mail</Link>
+                <Link className="hover:bg-blue-600 hover:text-white hover:px-2 hover:py-1 hover:rounded-md transition-colors" href="mailto:bhavesh@physics.iitm.ac.in">office mail</Link>
               </span>{" "}
               or{" "}
               <span className="italic text-blue-600 font-bold">
-                <Link className="hover:bg-blue-600 hover:text-white hover:px-2 hover:py-1 hover:rounded-md" href="mailto:gupta.bhavesh1605@gmail.com">personal mail</Link>
+                <Link className="hover:bg-blue-600 hover:text-white hover:px-2 hover:py-1 hover:rounded-md transition-colors" href="mailto:gupta.bhavesh1605@gmail.com">personal mail</Link>
               </span>{" "}
             </div>
             <div className="email">
@@ -55,24 +54,18 @@ const Contact = () => {
 
 const ShowMap = () => {
   return (
-    <>
-      <div className="map mt-24">
-        <section className="text-gray-600 body-font relative">
-          <div className="absolute inset-0 bg-gray-300">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.732756829556!2d80.23221989999999!3d12.988937199999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525d8002066921%3A0x72ac64139aeaf118!2sDepartment%20Of%20Physics%2C%20Indian%20Institute%20Of%20Technology%20Madras!5e0!3m2!1sen!2sin!4v1764497422499!5m2!1sen!2sin"
-              className="w-full h-full"
-              style={{ border: 0 }}
-              allowFullScreen=""
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-            ></iframe>
-          </div>
-          <div className="h-96"></div>
-          <div className="h-52"></div>
-        </section>
+    <div className="container mx-auto px-6 md:w-4/5 my-16">
+      <div className="w-full h-80 md:h-[420px] rounded-2xl overflow-hidden shadow-lg border border-gray-200">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.732756829556!2d80.23221989999999!3d12.988937199999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525d8002066921%3A0x72ac64139aeaf118!2sDepartment%20Of%20Physics%2C%20Indian%20Institute%20Of%20Technology%20Madras!5e0!3m2!1sen!2sin!4v1764497422499!5m2!1sen!2sin"
+          className="w-full h-full"
+          style={{ border: 0 }}
+          allowFullScreen=""
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
+        ></iframe>
       </div>
-    </>
+    </div>
   );
 };
 

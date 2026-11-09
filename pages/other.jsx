@@ -20,14 +20,14 @@ const Other = (props) => {
         <meta name="keywords" content="PMRF" />
         <meta name="keywords" content="IIT Madras" />
         <meta name="keywords" content="CQuICC" />
-        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+        <meta httpEquiv="Content-Type" content="text/html;charset=UTF-8" />
         <link rel="shortcut icon" href="/favicon/favicon.ico" />
       </Head>
       <Navbar />
       <main>
         <div className="flex flex-col px-6 md:w-4/5 mt-12 m-auto">
           <h1 className="font-extrabold text-xl text-black md:text-4xl">
-            Other things i do ...
+            Other Things I Do...
           </h1>
         </div>
         <div className="gallery pt-6 md:pt-5">
@@ -58,11 +58,11 @@ const Gallery1 = ({ gallery1Data }) => {
                 Life at IIT Madras
               </div>
               <p className="md:w-2/3 md:ml-24 mt-5 leading-relaxed text-lg text-gray-600 text-justify">
-                There is alot that you can explore in this huge campus. It is
-                always fun to go on a cycle ride around the campus(until you
+                There is a lot that you can explore in this huge campus. It is
+                always fun to go on a cycle ride around the campus (until you
                 explore most of the campus…because I now feel that this campus
-                is small). Probably night life in insti will be alot more
-                memorable(of course as of now we have curfew for freshies and we
+                is small). Probably night life in insti will be a lot more
+                memorable (of course as of now we have curfew for freshies and we
                 are expected to be back in the hostel by 9:30…but it's okay to
                 break the rules sometimes). Going to the beach to see the
                 sunrise is something you will cherish. Saturday OAT movie with

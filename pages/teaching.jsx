@@ -27,7 +27,7 @@ const Teaching = (props) => {
         <meta name="keywords" content="PMRF" />
         <meta name="keywords" content="IIT Madras" />
         <meta name="keywords" content="CQuICC" />
-        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+        <meta httpEquiv="Content-Type" content="text/html;charset=UTF-8" />
         <link rel="shortcut icon" href="/favicon/favicon.ico" />
       </Head>
       <Navbar />
@@ -42,61 +42,31 @@ const Teaching = (props) => {
                 PMRF TA work for NPTEL
               </div>
 
-              <div className="mt-12">
-                {pmrfTaData.map((e, index) => {
-                  // let link = e.link.length != 0 ? true : false;
-                  return (
-                    <section key={index} className="text-base">
-                      <ul className="list-disc text-gray-700 text-base md:text-lg space-y-4 md:mx-3 mt-5">
-                        <li>
-                          <span className="font-bold text-black">
-                            {e.head}{" "}
-                          </span>
-                          <span className="text-md">{e.content}</span>
-                          {/* {link != "" && (
-                            <span>
-                              <Link href={e.link}>
-                                {" "}
-                                <FaFilePdf className="inline pointer mb-1 ml-1 text-blue-500" />
-                              </Link>
-                            </span>
-                          )} */}
-                        </li>
-                      </ul>
-                    </section>
-                  );
-                })}
+              <div className="mt-8">
+                <ul className="list-disc text-gray-700 text-base md:text-lg space-y-4 md:mx-3">
+                  {pmrfTaData.map((e, index) => (
+                    <li key={index}>
+                      <span className="font-bold text-black">{e.head} </span>
+                      <span className="text-md">{e.content}</span>
+                    </li>
+                  ))}
+                </ul>
               </div>
             </section>
 
             <section>
               <div className="mt-16 text-lg md:text-2xl font-bold">
-                Teaching Responsiblity
+                Teaching Responsibility
               </div>
-              <div className="mt-12">
-                {responsibilityData.map((e, index) => {
-                  // let link = e.link.length != 0 ? true : false;
-                  return (
-                    <section key={index} className="text-base">
-                      <ul className="list-disc text-gray-700 text-base md:text-lg space-y-4 md:mx-3 mt-5">
-                        <li>
-                          <span className="font-bold text-black">
-                            {e.head}{" "}
-                          </span>
-                          <span className="text-md">{e.content}</span>
-                          {/* {link != "" && (
-                            <span>
-                              <Link href={e.link}>
-                                {" "}
-                                <FaFilePdf className="inline pointer mb-1 ml-1 text-blue-500" />
-                              </Link>
-                            </span>
-                          )} */}
-                        </li>
-                      </ul>
-                    </section>
-                  );
-                })}
+              <div className="mt-8">
+                <ul className="list-disc text-gray-700 text-base md:text-lg space-y-4 md:mx-3">
+                  {responsibilityData.map((e, index) => (
+                    <li key={index}>
+                      <span className="font-bold text-black">{e.head} </span>
+                      <span className="text-md">{e.content}</span>
+                    </li>
+                  ))}
+                </ul>
               </div>
             </section>
 
@@ -107,24 +77,19 @@ const Teaching = (props) => {
 
               {instituteData.map((e, index) => {
                 return (
-                  <section key={index} className="text-base">
+                  <div key={index} className="text-base mt-6">
                     <h4
                       id="2020-2021"
-                      className="relative group mt-6 font-semibold text-violet-900"
+                      className="relative group font-semibold text-violet-900 text-lg"
                     >
-                      {e.year}{" "}
+                      {e.year}
                     </h4>
-                    {e.teaching.map((element, index) => {
-                      return (
-                        <ul
-                          key={index}
-                          className="list-disc list-inside space-y-4 md:p-3 mt-6 text-sm md:text-lg text-gray-600"
-                        >
-                          <li>{element.title}</li>
-                        </ul>
-                      );
-                    })}
-                  </section>
+                    <ul className="list-disc list-inside space-y-3 md:p-3 mt-3 text-sm md:text-lg text-gray-600">
+                      {e.teaching.map((element, idx) => (
+                        <li key={idx}>{element.title}</li>
+                      ))}
+                    </ul>
+                  </div>
                 );
               })}
             </section>

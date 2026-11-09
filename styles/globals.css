@@ -2,6 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
+
+.gradient-bg-welcome {
+  background: linear-gradient(180deg, #f8fafc 0%, #edf2f7 100%);
+}
+
+.gradient-bg-services {
+  background: linear-gradient(180deg, #f8fafc 0%, #ffffff 40%, #f8fafc 100%);
+}
+
+.gradient-bg-transactions {
+  background: linear-gradient(135deg, #f1f5f9 0%, #e2e8f0 100%);
+}
+
+.gradient-bg-footer {
+  background: linear-gradient(180deg, #1f2937 0%, #111827 100%);
+}
 
 .swiper {
   width: 100%;

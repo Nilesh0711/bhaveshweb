@@ -18,11 +18,8 @@ const Starter = () => {
           IIT Madras - Bhavesh Gupta | Prime Minister Research Fellow | IIT Madras
         </title>
         <meta name="description" content="Center for Quantum Information, Communication and Computing | Department of Physics | Prime Minister Research Fellow" />
-        <meta name="keywords" content="Quantum" />
-        <meta name="keywords" content="PMRF" />
-        <meta name="keywords" content="IIT Madras" />
-        <meta name="keywords" content="CQuICC" />
-        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+        <meta name="keywords" content="Quantum, PMRF, IIT Madras, CQuICC, Physics" />
+        <meta httpEquiv="Content-Type" content="text/html;charset=UTF-8" />
         <link rel="shortcut icon" href="/favicon/favicon.ico" />
       </Head>
       <SliderImage />
@@ -67,8 +64,8 @@ const SliderImage = () => {
           </SwiperSlide>
         </Swiper>
 
-        <div className="absolute flex-col items-center flex text-white opacity-80 w-full z-50">
-          <h1 className="text-2xl font-light mt-6">PMRF RESEARCH SCHOLOR</h1>
+        <div className="absolute flex-col items-center flex text-white opacity-90 w-full z-50">
+          <h1 className="text-2xl font-light mt-6 tracking-wide">PMRF RESEARCH SCHOLAR</h1>
           <div className="text-xl font-light mt-6">( PMRF ID : 2502421 )</div>
         </div>
 

@@ -14,7 +14,7 @@ const Home = () => {
         <meta name="keywords" content="PMRF" />
         <meta name="keywords" content="IIT Madras" />
         <meta name="keywords" content="CQuICC" />
-        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+        <meta httpEquiv="Content-Type" content="text/html;charset=UTF-8" />
         <link rel="shortcut icon" href="/favicon/favicon.ico" />
       </Head>
       <Navbar />

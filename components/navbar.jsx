@@ -1,65 +1,121 @@
-import React from "react";
+import React, { useState } from "react";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { useRouter } from "next/router";
 import navbarItems from "../data/navbar/navbarItems";
 
-const NavBarItem = ({ title, pathName, urlPath }) => {
+const NavBarItem = ({ title, pathName, currentPath, onClick }) => {
+  const normCurrent = (currentPath || "").replace(/\/$/, "");
+  const normTarget = (pathName || "").replace(/\/$/, "");
+  const isActive = normCurrent === normTarget;
+
   return (
-    <>
-      <Link
-        href={pathName}
-        className={`${
-          pathName === urlPath ? "font-bold text-blue-500" : ""
-        } mr-3 md:mr-5 hover:text-blue-900 md:hover:underline decoration-2 decoration-sky-500`}
-      >
-        {title}
-      </Link>
-    </>
+    <Link
+      href={pathName}
+      onClick={onClick}
+      className={`px-3 py-2 text-sm md:text-base font-medium rounded-md transition-all duration-200 ${
+        isActive
+          ? "text-blue-600 font-bold bg-blue-50 md:bg-transparent md:border-b-2 md:border-blue-600 rounded-none"
+          : "text-gray-700 hover:text-blue-600 hover:bg-gray-100 md:hover:bg-transparent"
+      }`}
+    >
+      {title}
+    </Link>
   );
 };
 
 const Navbar = () => {
-  const urlPath = usePathname();
+  const router = useRouter();
+  const currentPath = router?.pathname || "";
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
-    <div className="gradient-bg-welcome">
-      <div className="flex flex-col items-center text-center py-12">
-        <p className="font-bold text-black text-xl md:text-3xl">
-          Prime Minister Research Fellow{" "}
+    <header className="gradient-bg-welcome border-b border-gray-200">
+      <div className="flex flex-col items-center text-center pt-8 pb-6 px-4">
+        <p className="font-bold text-gray-900 text-xl md:text-3xl tracking-tight">
+          Prime Minister Research Fellow
         </p>
-        <section className="flex flex-col items-center justify-center mx-5">
-          <h3 className="relative group mt-6 text-blue-500 text-md md:text-xl font-semibold">
-            <a href="https://quantum.iitm.ac.in">
-              CQuICC - Center for Quantum Information, Communication and
-              Computing
+        <section className="flex flex-col items-center justify-center mt-3 space-y-1">
+          <h3 className="text-blue-600 hover:text-blue-800 text-sm md:text-lg font-semibold transition-colors">
+            <a
+              href="https://quantum.iitm.ac.in"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              CQuICC - Center for Quantum Information, Communication and Computing
             </a>
           </h3>
-          <h3 className="relative group mt-4 font-semibold text-md md:text-xl text-blue-500">
-            <a href="https://physics.iitm.ac.in">Department of Physics</a>,
-            <a href="https://www.iitm.ac.in/"> IIT Madras</a>
-          </h3>
+          <h4 className="text-sm md:text-base text-gray-700 font-medium">
+            <a
+              href="https://physics.iitm.ac.in"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-blue-600 underline-offset-2 hover:underline"
+            >
+              Department of Physics
+            </a>
+            ,{" "}
+            <a
+              href="https://www.iitm.ac.in/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-blue-600 underline-offset-2 hover:underline"
+            >
+              IIT Madras
+            </a>
+          </h4>
         </section>
       </div>
 
-      <hr className="h-px bg-gray-300 border-0 w-4/5 mx-auto" />
+      <div className="border-t border-gray-200">
+        <div className="max-w-6xl mx-auto px-4 flex items-center justify-between md:justify-center py-2">
+          {/* Mobile hamburger button */}
+          <div className="md:hidden flex items-center justify-between w-full py-1">
+            <span className="text-sm font-semibold uppercase text-gray-600">Menu</span>
+            <button
+              onClick={() => setIsOpen(!isOpen)}
+              type="button"
+              className="p-2 rounded-md text-gray-700 hover:text-blue-600 hover:bg-gray-100 focus:outline-none"
+              aria-label="Toggle navigation"
+            >
+              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                {isOpen ? (
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                ) : (
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+                )}
+              </svg>
+            </button>
+          </div>
 
-      <header className="text-gray-600 body-font">
-        <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-          <nav className="md:ml-auto text-black md:mr-auto flex flex-wrap text-sm md:text-base items-center uppercase justify-center">
-            {navbarItems.map((element, index) => {
-              return (
-                <NavBarItem
-                  key={index}
-                  title={element.title}
-                  pathName={element.pathName}
-                  urlPath={urlPath}
-                />
-              );
-            })}
+          {/* Desktop navigation */}
+          <nav className="hidden md:flex flex-wrap items-center justify-center space-x-1 lg:space-x-4 uppercase">
+            {navbarItems.map((element, index) => (
+              <NavBarItem
+                key={index}
+                title={element.title}
+                pathName={element.pathName}
+                currentPath={currentPath}
+              />
+            ))}
           </nav>
         </div>
-      </header>
-      <hr className="h-px bg-gray-300 border-0 w-4/5 mx-auto" />
-    </div>
+
+        {/* Mobile menu dropdown */}
+        {isOpen && (
+          <nav className="md:hidden px-4 pt-2 pb-4 space-y-1 border-t border-gray-200 bg-white shadow-sm flex flex-col uppercase">
+            {navbarItems.map((element, index) => (
+              <NavBarItem
+                key={index}
+                title={element.title}
+                pathName={element.pathName}
+                currentPath={currentPath}
+                onClick={() => setIsOpen(false)}
+              />
+            ))}
+          </nav>
+        )}
+      </div>
+    </header>
   );
 };
 

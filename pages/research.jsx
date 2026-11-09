@@ -40,7 +40,7 @@ const Research = (props) => {
         <meta name="keywords" content="PMRF" />
         <meta name="keywords" content="IIT Madras" />
         <meta name="keywords" content="CQuICC" />
-        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+        <meta httpEquiv="Content-Type" content="text/html;charset=UTF-8" />
         <link rel="shortcut icon" href="/favicon/favicon.ico" />
       </Head>
       <Navbar />
@@ -507,8 +507,8 @@ const ProgressReport = ({ showAlert }) => {
               Semester Progress Report
             </Button>
           </PopoverHandler>
-          <PopoverContent>
-            <div className="grid grid-cols-5 grid-row-5 gap-y-5 gap-x-10">
+          <PopoverContent className="z-50 max-w-xs sm:max-w-md md:max-w-xl">
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-3 p-1">
               <SemesterButton
                 title={"Semester 1"}
                 link={
@@ -590,7 +590,7 @@ const SemesterButton = (props) => {
 
   const handleClick = (e) => {
     e.preventDefault();
-    $("html, body").animate({ scrollTop: 0 }, "slow");
+    window.scrollTo({ top: 0, behavior: "smooth" });
     props.showAlert(e);
   };
 
