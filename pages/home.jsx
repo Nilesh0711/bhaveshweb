@@ -3,6 +3,7 @@ import Link from "next/link";
 import Head from "next/head";
 import Navbar from "../components/navbar";
 import Footer from "../components/footer";
+import { getAssetPath } from "../lib/assets";
 
 const Home = () => {
   return (
@@ -15,7 +16,7 @@ const Home = () => {
         <meta name="keywords" content="IIT Madras" />
         <meta name="keywords" content="CQuICC" />
         <meta httpEquiv="Content-Type" content="text/html;charset=UTF-8" />
-        <link rel="shortcut icon" href="/favicon/favicon.ico" />
+        <link rel="shortcut icon" href={getAssetPath("/favicon/favicon.ico")} />
       </Head>
       <Navbar />
       <main id="main-content" className="relative grow gradient-bg-services">
@@ -63,7 +64,7 @@ const Gallery = () => {
                 <img
                   alt="gallery"
                   className="absolute inset-0 w-full h-64 object-cover object-center"
-                  src="/img/galleryHome/ckt.jpg"
+                  src={getAssetPath("/img/galleryHome/ckt.jpg")}
                 />
                 <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-gray-900 opacity-0 hover:opacity-100">
                   <div className="title-font text-lg font-medium text-gray-300 mb-3">
@@ -82,7 +83,7 @@ const Gallery = () => {
                 <img
                   alt="gallery"
                   className="absolute inset-0 w-full h-64 object-cover object-center"
-                  src="/img/galleryHome/depth.jpg"
+                  src={getAssetPath("/img/galleryHome/depth.jpg")}
                 />
                 <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-gray-900 opacity-0 hover:opacity-100">
                   <div className="title-font text-lg font-medium text-gray-300 mb-3">
@@ -99,7 +100,7 @@ const Gallery = () => {
                 <img
                   alt="gallery"
                   className="absolute inset-0 w-full h-64 object-cover object-center"
-                  src="/img/galleryHome/graph.jpg"
+                  src={getAssetPath("/img/galleryHome/graph.jpg")}
                 />
                 <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-gray-900 opacity-0 hover:opacity-100">
                   <div className="title-font text-lg font-medium text-gray-300 mb-3">
@@ -117,7 +118,7 @@ const Gallery = () => {
                 <img
                   alt="gallery"
                   className="absolute inset-0 w-full h-64 object-cover object-center"
-                  src="/img/galleryHome/ibm_qiskit.jpg"
+                  src={getAssetPath("/img/galleryHome/ibm_qiskit.jpg")}
                 />
                 <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-gray-900 opacity-0 hover:opacity-100">
                   <div className="title-font text-lg font-medium text-gray-300 mb-3">
@@ -136,7 +137,7 @@ const Gallery = () => {
                 <img
                   alt="gallery"
                   className="absolute inset-0 w-full h-64 object-cover object-center"
-                  src="/img/galleryHome/qcomputer.jpg"
+                  src={getAssetPath("/img/galleryHome/qcomputer.jpg")}
                 />
                 <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-gray-900 opacity-0 hover:opacity-100">
                   <div className="title-font text-lg font-medium text-gray-300 mb-3">
@@ -154,7 +155,7 @@ const Gallery = () => {
                 <img
                   alt="gallery"
                   className="absolute inset-0 w-full h-64 object-cover object-center"
-                  src="/img/galleryHome/chip.jpg"
+                  src={getAssetPath("/img/galleryHome/chip.jpg")}
                 />
                 <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-gray-900 opacity-0 hover:opacity-100">
                   <div className="title-font text-lg font-medium text-gray-300 mb-3">
@@ -182,7 +183,7 @@ const Quotes = () => {
         <div className="md:w-1/3 w-full mx-auto rounded-lg px-5 pt-5 pb-10 text-gray-800">
           <div className="w-full pt-1 pb-5">
             <div className="overflow-hidden rounded-full w-20 h-20 -mt-16 mx-auto shadow-lg">
-              <img src="/img/testimonial/qworld.jpg" alt="image" />
+              <img src={getAssetPath("/img/testimonial/qworld.jpg")} alt="image" />
             </div>
           </div>
           <div className="w-full mb-10">
@@ -209,7 +210,7 @@ const Quotes = () => {
         <div className="md:w-1/3 w-full mx-auto rounded-lg  px-5 pt-5 pb-10 text-gray-800">
           <div className="w-full pt-1 pb-5">
             <div className="overflow-hidden rounded-full w-20 h-20 -mt-16 mx-auto shadow-lg">
-              <img src="/img/testimonial/david.jpg" alt="image" />
+              <img src={getAssetPath("/img/testimonial/david.jpg")} alt="image" />
             </div>
           </div>
           <div className="w-full mb-10">
@@ -235,7 +236,7 @@ const Quotes = () => {
         <div className="md:w-1/3 w-full mx-auto rounded-lg  px-5 pt-5 pb-10 text-gray-800">
           <div className="w-full pt-1 pb-5">
             <div className="overflow-hidden rounded-full w-20 h-20 -mt-16 mx-auto shadow-lg">
-              <img src="/img/testimonial/richard.jpg" alt="image" />
+              <img src={getAssetPath("/img/testimonial/richard.jpg")} alt="image" />
             </div>
           </div>
           <div className="w-full mb-10">

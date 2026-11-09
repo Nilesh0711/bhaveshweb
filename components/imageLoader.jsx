@@ -1,27 +1,31 @@
 import React, { useState, useEffect } from "react";
+import { getAssetPath } from "../lib/assets";
 
 const ImageLoader = ({ mainImageSrc, altImageSrc, altText, classValue, buttonReq = false }) => {
-  const [imageSrc, setImageSrc] = useState(altImageSrc || mainImageSrc);
-  const [animate, setAnimate] = useState(altImageSrc ? "animate-pulse" : "");
+  const resolvedMain = getAssetPath(mainImageSrc);
+  const resolvedAlt = getAssetPath(altImageSrc);
+
+  const [imageSrc, setImageSrc] = useState(resolvedAlt || resolvedMain);
+  const [animate, setAnimate] = useState(resolvedAlt ? "animate-pulse" : "");
 
   useEffect(() => {
-    if (!mainImageSrc) return;
+    if (!resolvedMain) return;
     const image = new Image();
-    image.src = mainImageSrc;
+    image.src = resolvedMain;
 
     image.onload = () => {
-      setImageSrc(mainImageSrc);
+      setImageSrc(resolvedMain);
       setAnimate("");
     };
 
     image.onerror = () => {
       setAnimate("");
     };
-  }, [mainImageSrc]);
+  }, [resolvedMain]);
 
   const handleOpenInNewTab = () => {
-    if (mainImageSrc) {
-      window.open(mainImageSrc, "_blank", "noopener,noreferrer");
+    if (resolvedMain) {
+      window.open(resolvedMain, "_blank", "noopener,noreferrer");
     }
   };
 

@@ -2,6 +2,7 @@ import React from "react";
 import Link from "next/link";
 import Head from "next/head";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { getAssetPath } from "../lib/assets";
 
 // Import Swiper styles
 import "swiper/css";
@@ -20,7 +21,7 @@ const Starter = () => {
         <meta name="description" content="Center for Quantum Information, Communication and Computing | Department of Physics | Prime Minister Research Fellow" />
         <meta name="keywords" content="Quantum, PMRF, IIT Madras, CQuICC, Physics" />
         <meta httpEquiv="Content-Type" content="text/html;charset=UTF-8" />
-        <link rel="shortcut icon" href="/favicon/favicon.ico" />
+        <link rel="shortcut icon" href={getAssetPath("/favicon/favicon.ico")} />
       </Head>
       <SliderImage />
     </div>
@@ -45,21 +46,21 @@ const SliderImage = () => {
             <img
               alt="image"
               className="object-cover w-full h-screen object-center bg-center bg-cover"
-              src="/img/slider/pic_1.jpg"
+              src={getAssetPath("/img/slider/pic_1.jpg")}
             />
           </SwiperSlide>
           <SwiperSlide>
             <img
               alt="image"
               className="object-cover w-full h-screen object-center bg-center bg-cover"
-              src="/img/slider/pic_2.jpg"
+              src={getAssetPath("/img/slider/pic_2.jpg")}
             />
           </SwiperSlide>
           <SwiperSlide>
             <img
               alt="image"
               className="object-cover w-full h-screen object-center bg-center bg-cover"
-              src="/img/slider/pic_3.jpg"
+              src={getAssetPath("/img/slider/pic_3.jpg")}
             />
           </SwiperSlide>
         </Swiper>
