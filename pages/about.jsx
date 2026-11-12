@@ -215,20 +215,20 @@ const PhotoImage = () => {
   return (
     <>
       <header className="flex flex-col items-center mx-auto justify-center mt-10 mb-10 md:mb-20 md:my-20">
-        <div className="md:w-4/5 md:h-[550px] h-[350px] w-[300px]">
+        <div className="md:w-4/5 md:h-[550px] h-[350px] w-[300px] overflow-hidden rounded-md shadow-md">
           <ImageLoader
             mainImageSrc={
               "https://utfs.io/f/YRpu8I8npquVOrhEcg27ZYkHzDtxsnuVRyNcEmQw3p6gAfvb"
             }
             altImageSrc={"/img/loading.jpg"}
-            altText={"image"}
+            altText={"Bhavesh Gupta"}
             classValue={
-              "object-cover object-center mb-2 rounded-md w-full h-full"
+              "object-cover object-center w-full h-full"
             }
           />
         </div>
-        <article className="text-center">
-          <div className="text-4xl my-4 text-black font-extrabold ">
+        <article className="text-center mt-4">
+          <div className="text-3xl md:text-4xl my-3 text-black font-extrabold">
             Bhavesh Gupta
           </div>
           <h2 className="text-xl text-blue-500">Contact Details</h2>
